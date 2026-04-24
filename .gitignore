@@ -1,0 +1,21 @@
+# PyTorch
+*.pt
+*.pth
+*.ckpt
+
+# Datasets & Processed data (very large)
+AER_Encoder/data/raw/
+AER_Encoder/data/processed/
+datasets/
+
+# System
+.DS_Store
+__pycache__/
+*.pyc
+.env
+venv/
+env/
+
+# Local audio test files
+*.wav
+*.mp3

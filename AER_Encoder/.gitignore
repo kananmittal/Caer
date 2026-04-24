@@ -1,0 +1,17 @@
+# PyTorch
+*.pt
+*.pth
+*.ckpt
+
+# Datasets & Processed data (very large)
+data/raw/
+data/processed/
+
+# System
+.DS_Store
+__pycache__/
+*.pyc
+
+# Local audio test files
+*.wav
+*.mp3
