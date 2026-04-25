@@ -45,6 +45,10 @@ class AudioEmotionDataset(Dataset):
                 
         waveform = waveform.squeeze(0)
         
+        # Wav2Vec2 natively requires Zero-Mean Unit-Variance scaling, otherwise 
+        # the internal LayerNorms clip the gradients to zero (causing loss freezing)
+        waveform = (waveform - waveform.mean()) / torch.sqrt(waveform.var() + 1e-7)
+        
         return {
             "input_values": waveform,
             "categorical_label": torch.tensor(self.categorical_labels[idx], dtype=torch.long),

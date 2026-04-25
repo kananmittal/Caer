@@ -13,7 +13,7 @@ class AERConfig:
     
     # Training parameters
     batch_size: int = 8
-    learning_rate: float = 1e-4
+    learning_rate: float = 2e-5 # Scaled down; 1e-4 causes catastrophic forgetting in pre-trained transformers
     epochs: int = 10
     freeze_feature_extractor: bool = True
     
