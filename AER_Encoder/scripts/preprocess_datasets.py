@@ -56,11 +56,15 @@ def parse_ravdess(base_dir):
 
 def parse_tess(base_dir):
     records = []
+    seen_files = set()
     # Format: folder determines emotion (e.g. OAF_angry, YAF_happy)
     # Suffix is also _angry, _happy, _ps (pleasant surprise), _fear, _sad, _disgust, _neutral
     files = glob.glob(str(base_dir / "tess" / "**" / "*.wav"), recursive=True)
     for f in files:
         basename = os.path.basename(f).lower()
+        if basename in seen_files:
+            continue
+        seen_files.add(basename)
         if 'neutral' in basename: emo = 'neutral'
         elif 'happy' in basename: emo = 'happy'
         elif 'sad' in basename: emo = 'sad'
