@@ -122,6 +122,47 @@ def parse_savee(base_dir):
             })
     return records
 
+def parse_iemocap(base_dir):
+    import re
+    records = []
+    eval_files = glob.glob(str(base_dir / "IEMOCAP_full_release" / "Session*" / "dialog" / "EmoEvaluation" / "*.txt"), recursive=True)
+    
+    # IEMOCAP direct to class mapping (Drops 'fru' and 'xxx' automatically)
+    iemocap_map = {'neu': 'neutral', 'hap': 'happy', 'exc': 'happy', 'sad': 'sad', 'ang': 'angry', 'fea': 'fear', 'sur': 'surprise', 'dis': 'disgust'}
+    
+    pattern = re.compile(r'^\[.+\]\s+(Ses\w+)\s+(\w+)\s+\[(\d+\.\d+),\s+(\d+\.\d+),\s+(\d+\.\d+)\]')
+    
+    for eval_file in eval_files:
+        with open(eval_file, 'r', encoding='utf-8', errors='ignore') as f:
+            for line in f:
+                match = pattern.match(line.strip())
+                if match:
+                    file_id = match.group(1)
+                    emo_code = match.group(2)
+                    val_score = float(match.group(3))
+                    act_score = float(match.group(4))
+                    
+                    if emo_code in iemocap_map:
+                        emotion = iemocap_map[emo_code]
+                        session = file_id[4] # E.g., '1' from Ses01
+                        
+                        dialog_prefix = "_".join(file_id.split('_')[:-1])
+                        wav_path = base_dir / "IEMOCAP_full_release" / f"Session{session}" / "sentences" / "wav" / dialog_prefix / f"{file_id}.wav"
+                        
+                        if wav_path.exists():
+                            norm_val = (val_score - 3.0) / 2.0
+                            norm_ar = (act_score - 3.0) / 2.0
+                            
+                            records.append({
+                                'file_path': str(wav_path),
+                                'dataset': 'IEMOCAP',
+                                'emotion': emotion,
+                                'label_idx': UNIFIED_EMOTION_MAP[emotion],
+                                'valence': round(norm_val, 4),
+                                'arousal': round(norm_ar, 4)
+                            })
+    return records
+
 def generate_distribution_chart(df, save_path):
     plt.figure(figsize=(10, 6))
     
@@ -153,6 +194,7 @@ def main():
     all_records.extend(parse_tess(base_raw_dir))
     all_records.extend(parse_crema(base_raw_dir))
     all_records.extend(parse_savee(base_raw_dir))
+    all_records.extend(parse_iemocap(base_raw_dir))
     
     df = pd.DataFrame(all_records)
     
@@ -162,9 +204,9 @@ def main():
         
     print(f"Successfully aggregated {len(df)} total audio samples across {df['dataset'].nunique()} datasets.")
     
-    # Enrich with approximated Valence/Arousal values
-    df['valence'] = df['label_idx'].apply(lambda idx: V_A_APPROXIMATION[idx][0])
-    df['arousal'] = df['label_idx'].apply(lambda idx: V_A_APPROXIMATION[idx][1])
+    # Enrich with approximated Valence/Arousal values ONLY for generic datasets missing them
+    df['valence'] = df.apply(lambda row: V_A_APPROXIMATION[row['label_idx']][0] if pd.isna(row.get('valence')) else row['valence'], axis=1)
+    df['arousal'] = df.apply(lambda row: V_A_APPROXIMATION[row['label_idx']][1] if pd.isna(row.get('arousal')) else row['arousal'], axis=1)
     
     # Save unified CSV
     manifest_path = config.processed_dir / "train_manifest.csv"
