@@ -88,10 +88,10 @@ def main():
     print(f"Successfully loaded {len(dataset)} samples. Ready for Phase 1 Base Model Training.")
     
     # Example execution looping structure (usually you run this on Ubuntu to prevent Mac thermal issues)
-    # for epoch in range(config.epochs):
-    #     epoch_loss = train_epoch(model, dataloader, optimizer, device)
-    #     print(f"Epoch {epoch+1} Completed. Avg Loss: {epoch_loss:.4f}")
-    #     torch.save(model.state_dict(), f"aer_base_model_epoch_{epoch}.pt")
+    for epoch in range(config.epochs):
+        epoch_loss = train_epoch(model, dataloader, optimizer, device)
+        print(f"Epoch {epoch+1} Completed. Avg Loss: {epoch_loss:.4f}")
+        torch.save(model.state_dict(), f"aer_base_model_epoch_{epoch}.pt")
 
 if __name__ == "__main__":
     main()
