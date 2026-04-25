@@ -13,7 +13,16 @@ class AffectiveEncoder(nn.Module):
         self.wav2vec2 = Wav2Vec2Model.from_pretrained(config.model_name, use_safetensors=True)
         
         if config.freeze_feature_extractor:
-            self.wav2vec2.freeze_feature_extractor()
+            # Updated to prevent Transformers v5 deprecation error
+            if hasattr(self.wav2vec2, "freeze_feature_encoder"):
+                self.wav2vec2.freeze_feature_encoder()
+            else:
+                self.wav2vec2.freeze_feature_extractor()
+                
+        # Fix for Hugging Face Checkpointing bug: "None of the inputs have requires_grad=True"
+        # Triggers backprop through Transformer blocks even when CNN features are frozen
+        if hasattr(self.wav2vec2, "enable_input_require_grads"):
+            self.wav2vec2.enable_input_require_grads()
             
         hidden_size = self.wav2vec2.config.hidden_size # 768 for base models
         
