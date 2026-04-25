@@ -10,7 +10,7 @@ class AffectiveEncoder(nn.Module):
     """
     def __init__(self, config):
         super(AffectiveEncoder, self).__init__()
-        self.wav2vec2 = Wav2Vec2Model.from_pretrained(config.model_name)
+        self.wav2vec2 = Wav2Vec2Model.from_pretrained(config.model_name, use_safetensors=True)
         
         if config.freeze_feature_extractor:
             self.wav2vec2.freeze_feature_extractor()
