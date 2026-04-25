@@ -128,16 +128,23 @@ def parse_savee(base_dir):
 
 def parse_iemocap(base_dir):
     import re
+    from pathlib import Path
     records = []
-    eval_files = glob.glob(str(base_dir / "IEMOCAP_full_release" / "Session*" / "dialog" / "EmoEvaluation" / "*.txt"), recursive=True)
+    
+    # OS-agnostic search for EmoEvaluation bypassing exact root naming
+    eval_files = glob.glob(str(base_dir / "**" / "EmoEvaluation" / "*.txt"), recursive=True)
     
     # IEMOCAP direct to class mapping (Drops 'fru' and 'xxx' automatically)
     iemocap_map = {'neu': 'neutral', 'hap': 'happy', 'exc': 'happy', 'sad': 'sad', 'ang': 'angry', 'fea': 'fear', 'sur': 'surprise', 'dis': 'disgust'}
     
     pattern = re.compile(r'^\[.+\]\s+(Ses\w+)\s+(\w+)\s+\[(\d+\.\d+),\s+(\d+\.\d+),\s+(\d+\.\d+)\]')
     
-    for eval_file in eval_files:
-        with open(eval_file, 'r', encoding='utf-8', errors='ignore') as f:
+    for eval_file_str in eval_files:
+        # Ignore MacOS hidden artifact files if they accidentally copied over
+        if "/._" in eval_file_str or "__MACOSX" in eval_file_str:
+            continue
+            
+        with open(eval_file_str, 'r', encoding='utf-8', errors='ignore') as f:
             for line in f:
                 match = pattern.match(line.strip())
                 if match:
@@ -151,7 +158,10 @@ def parse_iemocap(base_dir):
                         session = file_id[4] # E.g., '1' from Ses01
                         
                         dialog_prefix = "_".join(file_id.split('_')[:-1])
-                        wav_path = base_dir / "IEMOCAP_full_release" / f"Session{session}" / "sentences" / "wav" / dialog_prefix / f"{file_id}.wav"
+                        
+                        # Agnostic Path Leaping: Go up 3 levels to Session directory, then dive into wavs
+                        session_dir = Path(eval_file_str).parent.parent.parent
+                        wav_path = session_dir / "sentences" / "wav" / dialog_prefix / f"{file_id}.wav"
                         
                         if wav_path.exists():
                             norm_val = (val_score - 3.0) / 2.0
