@@ -14,7 +14,9 @@ EMOTION_MAP = {
     1: "Happy",
     2: "Sad",
     3: "Angry",
-    4: "Fear"
+    4: "Fear",
+    5: "Surprise",
+    6: "Disgust"
 }
 
 def load_and_preprocess_audio(file_path):
@@ -26,7 +28,11 @@ def load_and_preprocess_audio(file_path):
     if waveform.shape[0] > 1:
         waveform = torch.mean(waveform, dim=0, keepdim=True)
         
-    return waveform.squeeze(0).unsqueeze(0) # [1, Seq_Len]
+    waveform = waveform.squeeze(0)
+    # Zero-Mean Unit-Variance required for Wav2Vec2 inference
+    waveform = (waveform - waveform.mean()) / torch.sqrt(waveform.var() + 1e-7)
+        
+    return waveform.unsqueeze(0) # [1, Seq_Len]
 
 def main():
     if len(sys.argv) < 2:
@@ -39,9 +45,16 @@ def main():
     
     print("Loading AER Model Architecture...")
     model = AffectiveEncoder(config)
+    
+    # Locate and load the most freshly trained checkpoint
+    model_weight_path = Path("aer_base_model_epoch_9.pt")
+    if model_weight_path.exists():
+        print(f"Loading trained weights from {model_weight_path}...")
+        model.load_state_dict(torch.load(model_weight_path, map_location=device))
+    else:
+        print(f"WARNING: Weights {model_weight_path} not found. Running with untrained base model!")
+        
     model.eval()
-    # Note: In production you would load your trained weights here:
-    # model.load_state_dict(torch.load("aer_weights.pt"))
     
     print(f"Ingesting audio: {target_audio}")
     input_values = load_and_preprocess_audio(target_audio)
