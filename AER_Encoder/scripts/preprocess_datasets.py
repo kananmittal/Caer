@@ -39,7 +39,8 @@ def parse_ravdess(base_dir):
     # RAVDESS map: 01=neutral, 02=calm(map->neutral), 03=happy, 04=sad, 05=angry, 06=fear, 07=disgust, 08=surprise
     rav_map = {'01':'neutral', '02':'neutral', '03':'happy', '04':'sad', '05':'angry', '06':'fear', '07':'disgust', '08':'surprise'}
     
-    files = glob.glob(str(base_dir / "ravdess" / "**" / "*.wav"), recursive=True)
+    # Use case-insensitive rglob to support Ext4/Ubuntu filesystems
+    files = [str(f) for f in base_dir.rglob("*.wav") if "ravdess" in str(f).lower()]
     for f in files:
         basename = os.path.basename(f).split('.')[0]
         parts = basename.split('-')
@@ -59,7 +60,8 @@ def parse_tess(base_dir):
     seen_files = set()
     # Format: folder determines emotion (e.g. OAF_angry, YAF_happy)
     # Suffix is also _angry, _happy, _ps (pleasant surprise), _fear, _sad, _disgust, _neutral
-    files = glob.glob(str(base_dir / "tess" / "**" / "*.wav"), recursive=True)
+    # Use case-insensitive rglob to support Ext4/Ubuntu filesystems
+    files = [str(f) for f in base_dir.rglob("*.wav") if "tess" in str(f).lower() or "toronto" in str(f).lower()]
     for f in files:
         basename = os.path.basename(f).lower()
         if basename in seen_files:
@@ -88,7 +90,8 @@ def parse_crema(base_dir):
     # CREMA map: NEU, HAP, SAD, ANG, FEA, DIS
     crema_map = {'NEU':'neutral', 'HAP':'happy', 'SAD':'sad', 'ANG':'angry', 'FEA':'fear', 'DIS':'disgust'}
     
-    files = glob.glob(str(base_dir / "crema" / "**" / "*.wav"), recursive=True)
+    # Use case-insensitive rglob to support Ext4/Ubuntu filesystems
+    files = [str(f) for f in base_dir.rglob("*.wav") if "crema" in str(f).lower()]
     for f in files:
         basename = os.path.basename(f).split('.')[0]
         parts = basename.split('_')
@@ -109,7 +112,8 @@ def parse_savee(base_dir):
     # SAVEE map: a=angry, d=disgust, f=fear, h=happy, n=neutral, sa=sad, su=surprise
     savee_map = {'a':'angry', 'd':'disgust', 'f':'fear', 'h':'happy', 'n':'neutral', 'sa':'sad', 'su':'surprise'}
     
-    files = glob.glob(str(base_dir / "SAVEE" / "**" / "*.wav"), recursive=True)
+    # Use case-insensitive rglob to support Ext4/Ubuntu filesystems
+    files = [str(f) for f in base_dir.rglob("*.wav") if "savee" in str(f).lower()]
     for f in files:
         basename = os.path.basename(f).split('_')[-1] # sa01.wav -> sa01.wav
         
