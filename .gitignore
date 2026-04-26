@@ -19,3 +19,6 @@ env/
 # Local audio test files
 *.wav
 *.mp3
+
+# Deprecated/Inactive Modalities
+VER/
