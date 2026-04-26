@@ -182,6 +182,30 @@ def parse_iemocap(base_dir):
                             })
     return records
 
+def parse_cultural(base_dir):
+    records = []
+    # Cultural audio is saved in data/raw/cultural/processed_audio
+    cultural_dir = base_dir.parent / "cultural" / "processed_audio"
+    if not cultural_dir.exists():
+        return records
+        
+    # Files are named like: kota_factory_episode_1_utt_5_Happy.wav
+    files = [str(f) for f in cultural_dir.rglob("*.wav")]
+    for f in files:
+        basename = os.path.basename(f)
+        # The mapped emotion is always the last token before .wav
+        parts = basename.replace(".wav", "").split("_")
+        emo_str = parts[-1].lower()
+        
+        if emo_str in UNIFIED_EMOTION_MAP:
+            records.append({
+                'file_path': f,
+                'dataset': 'KOTA_FACTORY',
+                'emotion': emo_str,
+                'label_idx': UNIFIED_EMOTION_MAP[emo_str]
+            })
+    return records
+
 def generate_distribution_chart(df, save_path):
     plt.figure(figsize=(10, 6))
     
@@ -214,6 +238,7 @@ def main():
     all_records.extend(parse_crema(base_raw_dir))
     all_records.extend(parse_savee(base_raw_dir))
     all_records.extend(parse_iemocap(base_raw_dir))
+    all_records.extend(parse_cultural(base_raw_dir))
     
     df = pd.DataFrame(all_records)
     
