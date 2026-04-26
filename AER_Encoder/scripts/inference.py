@@ -34,32 +34,13 @@ def load_and_preprocess_audio(file_path):
         
     return waveform.unsqueeze(0) # [1, Seq_Len]
 
-def main():
-    if len(sys.argv) < 2:
-        print("Usage: python inference.py <path_to_audio_file>")
-        sys.exit(1)
-        
-    target_audio = sys.argv[1]
-    
-    device = torch.device("cpu") # For inference testing
-    
-    print("Loading AER Model Architecture...")
-    model = AffectiveEncoder(config)
-    
-    # Locate and load the most freshly trained checkpoint
-    model_weight_path = Path("aer_base_model_epoch_9.pt")
-    if model_weight_path.exists():
-        print(f"Loading trained weights from {model_weight_path}...")
-        model.load_state_dict(torch.load(model_weight_path, map_location=device))
-    else:
-        print(f"WARNING: Weights {model_weight_path} not found. Running with untrained base model!")
-        
-    model.eval()
-    
-    print(f"Ingesting audio: {target_audio}")
+def run_aer_inference(model, target_audio):
+    """
+    Modular inference function to be called by external routers (e.g. Flask).
+    Returns a dictionary payload with the results.
+    """
     input_values = load_and_preprocess_audio(target_audio)
     
-    print("Encoding...")
     with torch.no_grad():
         outputs = model(input_values)
         
@@ -83,6 +64,35 @@ def main():
             "latent_vector_preview": latent_vector[:5] # Showing first 5 for brevity
         }
     }
+    
+    return response_payload
+
+def main():
+    if len(sys.argv) < 2:
+        print("Usage: python inference.py <path_to_audio_file>")
+        sys.exit(1)
+        
+    target_audio = sys.argv[1]
+    
+    device = torch.device("cpu") # For inference testing
+    
+    print("Loading AER Model Architecture...")
+    model = AffectiveEncoder(config)
+    
+    # Locate and load the most freshly trained checkpoint
+    model_weight_path = Path("aer_base_model_epoch_9.pt")
+    if model_weight_path.exists():
+        print(f"Loading trained weights from {model_weight_path}...")
+        model.load_state_dict(torch.load(model_weight_path, map_location=device))
+    else:
+        print(f"WARNING: Weights {model_weight_path} not found. Running with untrained base model!")
+        
+    model.eval()
+    
+    print(f"Ingesting audio: {target_audio}")
+    print("Encoding...")
+    
+    response_payload = run_aer_inference(model, target_audio)
     
     print("\n--- INFERENCE RESULTS ---")
     print(json.dumps(response_payload, indent=4))
