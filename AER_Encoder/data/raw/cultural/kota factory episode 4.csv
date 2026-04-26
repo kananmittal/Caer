@@ -1,0 +1,744 @@
+﻿sno,Season,Episode,utterance,speaker,start,start_seconds,end,end_seconds,sentiment,emotion presented,emotion perceived
+1,1,4,"All of you, write down the homework you have to do.",Jeetu,00:05,5,00:06,6,Neutral,Neutral,Neutral
+2,1,4,Problem number 32 to 38 on the sheet.,Jeetu,00:07,7,00:12,12,Neutral,Neutral,Surprise
+3,1,4,And? ,Meenal,00:15,15,00:16,16,Neutral,Surprise,Neutral
+4,1,4,And?,Jeetu,00:16,16,01:17,77,Neutral,Neutral,Neutral
+5,1,4, And that's it,Jeetu,00:16,16,00:19,19,Neutral,Neutral,Surprise
+6,1,4,That's it?,Vaibhav,00:02,2,00:21,21,Neutral,Surprise,Neutral 
+7,1,4,Bhaiya we have five days off. Give us some more. We will do it.,Vaibhav,00:21,21,00:24,24,Neutral,Neutral,Neutral
+8,1,4,"Yes, I know",Jeetu,00:24,24,00:25,25,Neutral,Neutral(sarcasm),Neutral
+9,1,4,That's why I am not giving you more.,Jeetu,00:25,25,00:26,26,Neutral,Neutral,Neutral
+10,1,4,These five days are for the school's practical.,Jeetu,00:27,27,00:29,29,Neutral,Neutral,Neutral
+11,1,4, All of you will focus on that and relax. Okay?,Jeetu,00:30,30,00:32,32,Neutral,Neutral,Surprise
+12,1,4,Relax?,Meena,00:32,32,00:34,34,Neutral,Neutral,Neutral
+13,1,4,Yes. And your reshuffling exams will be held in 15 days of returning.,Jeetu,00:34,34,00:37,37,Neutral,Neutral,Neutral
+14,1,4,"13 days, sir. 13 days.",Meenal,00:37,37,00:38,38,Negative,Anger,Neutral
+15,1,4,Listen. 13 days.,Jeetu,00:38,38,00:39,39,Neutral,Neutral,Anger
+16,1,4,Then you have to study like a lunatic then. ,Jeetu,00:39,39,00:41,41,Neutral,Neutral,Neutral
+17,1,4,Charge your battery a little. ,Jeetu,00:41,41,00:42,42,Neutral,Neutral,Neutral
+18,1,4,You won't burn out if you relax a little along with your studies.,Jeetu,00:42,42,00:45,45,Neutral,Neutral,Neutral
+19,1,4,But all of you will focus on school.,Jeetu,00:46,46,00:47,47,Neutral,Neutral,Neutral
+20,1,4,"Uday, what's on your mind? ",Jeetu,00:47,47,00:48,48,Neutral,Neutral,Surprise
+21,1,4, Sir.,Uday,00:49,49,00:49,49,Neutral,surprise,Neutral
+22,1,4,That doesn't mean all of you laze completely.,Jeetu,00:50,50,00:52,52,Neutral,Neutral ,Neutral
+23,1,4, Just sleeping.,Jeetu,00:52,52,00:53,53,Neutral,Neutral ,Neutral
+24,1,4,Chill a little.,Jeetu,00:54,54,00:55,55,Neutral,Neutral,Neutral
+25,1,4,How many of you will be going to school for the first tomorrow? Put your hands up.,Jeetu,00:58,58,01:00,60,Neutral,Neutral,Neutral
+26,1,4,Bravo! This is the cream of our country.,Jeetu,01:03,63,01:07,67,Neutral,Neutral(sarcastic),Neutral
+27,1,4,Very good!,Jeetu,01:10,70,01:11,71,Neutral,Neutral(sarcastic),Neutral
+28,1,4,Superb handwriting! ,Uday,01:34,94,01:35,95,Positive,joy,Neutral
+29,1,4,The lab report is written in cursive.,Uday,01:36,96,01:38,98,Positive,joy,Neutral
+30,1,4,Value for money.,Uday,01:39,99,01:40,100,Positive,joy,Neutral
+31,1,4,They have given 8.2 as the value for g. ,Vaibhav,01:41,101,01:44,104,Neutral,Surprise,Neutral
+32,1,4,Shouldn't it be 9.8?,Vaibhav,01:45,105,01:46,106,Neutral,Neutral,Anger
+33,1,4,Ignorant chap! ,Uday,01:46,106,01:47,107,Negative,Anger,Neutral
+34,1,4,If you get 9.8 as the value of g in the lab..,Uday,01:47,107,01:50,110,Neutral,Neutral,Neutral
+35,1,4, Yes.,Vaibhav,01:50,110,01:50,110,Neutral,Neutral,Neutral
+36,1,4," Then you have certainly cheated, bro.",Uday,01:50,110,01:52,112,Neutral,Neutral,Neutral
+37,1,4,8.2 seems more realistic.,Uday,01:53,113,01:54,114,Neutral,Neutral,Neutral
+38,1,4,Even the A1 batch buys lab reports from him.,Uday,01:55,115,01:57,117,Neutral,Neutral,Surprise
+39,1,4,It cost me 700 rupees to save 8 hours.,Vaibhav,02:00,120,02:02,122,Negative,Sadness,Surprise
+40,1,4,No. ,Uday,02:02,122,02:03,123,Neutral,Surprise,Neutral
+41,1,4,300 rupees.,Uday,02:03,123,02:04,124,Neutral,Neutral,Neutral
+42,1,4,400 rupees was for the scooty rental.,Uday,02:04,124,02:05,125,Neutral,Neutral,Surprise
+43,1,4,Are you going to charge me just because I used your scooty for 2 days?,Vaibhav,02:07,127,02:10,130,Negative,Surprise,Neutral
+44,1,4,"No, no. Not mine. ",Uday,02:10,130,02:11,131,Neutral,Neutral,Neutral
+45,1,4, The other one that I have rented.,Uday,02:11,131,02:13,133,Neutral,Neutral,Neutral
+46,1,4,Only 400 rupees for 4 days.,Uday,02:13,133,02:15,135,Positive,joy,Neutral
+47,1,4,Isn't it great deal? ,Uday,02:15,135,02:17,137,Positive,joy,Surprise
+48,1,4,Shivangi says I am not organized.,Uday,02:17,137,02:20,140,Neutral,Neutral,Surprise
+49,1,4,Wait and watch. ,Uday,02:20,140,02:22,142,Neutral,Neutral,Surprise
+50,1,4,What other one?,Vaibhav,02:23,143,02:24,144,Neutral,Surprise,Neutral
+51,1,4,and for whom? ,Vaibhav,02:24,144,02:25,145,Neutral,Surprise,Neutral
+52,1,4,It cost me 400 rupees?!,Vaibhav,02:25,145,02:26,146,Negative,Anger,Anger
+53,1,4,You expect the four of us to sit one on top of the other?,Uday,02:27,147,02:29,149,Negative,Anger(sarcastic),Surprise
+54,1,4,I am so sly.,Uday,02:30,150,02:31,151,Positive,joy,Surprise
+55,1,4,I've already filled petrol in the scooty.,Uday,02:31,151,02:33,153,Positive,joy,Surprise
+56,1,4,What four people? ,Vaibhav,02:34,154,02:35,155,Negative,Surprise,Neutral
+57,1,4,"You, me, Shivangi and Vartika.",Uday,02:35,155,02:36,156,Neutral,Neutral,Anger
+58,1,4,Vartika who?,Vaibhav,02:36,156,02:37,157,Negative,surprise,Neutral
+59,1,4,Ratawal.,Uday,02:37,157,02:38,158,Neutral,Neutral,Anger
+60,1,4,Ratawal who?,Vaibhav,02:38,158,02:39,159,Negative,surprise,Neutral
+61,1,4, Shivangi's friend.,Uday,02:39,159,02:40,160,Neutral,Neutral,Neutral
+62,1,4,"What are you saying, bro? Quiet.",Vaibhav,02:40,160,02:41,161,Neutral,Neutral,Neutral
+63,1,4, Tell me calmly. What are you saying?,Vaibhav,02:41,161,02:42,162,Neutral,Neutral,Anger
+64,1,4,What are you saying? ,Uday,02:42,162,02:43,163,Negative,Anger,Neutral
+65,1,4,Should I remain quiet or should I tell you?,Uday,02:43,163,02:44,164,Negative,Anger,Neutral
+66,1,4,Look.,Uday,02:46,166,02:47,167,Neutral,Neutral,Neutral
+67,1,4,We have a 4 day break.,Uday,02:48,168,02:49,169,Neutral,Neutral,Neutral
+68,1,4,No coaching.,Uday,02:50,170,02:51,171,Neutral,Neutral,Neutral
+69,1,4,No homework.,Uday,02:51,171,02:52,172,Neutral,Neutral,Neutral
+70,1,4,We will go on an excursion.,Uday,02:52,172,02:53,173,Positive,joy,Neutral
+71,1,4,"I rented a scooty so that the four of us.. ..you, me, Shivangi and her friend Vartika Ratawal can sight see Kota.",Uday,02:54,174,03:03,183,Neutral,Neutral,Neutral
+72,1,4,Isn't that cool?,Uday,03:03,183,03:04,184,Positive,joy,Anger
+73,1,4,I am not going anywhere. ,Meena,03:05,185,03:06,186,Neutral,Neutral,Neutral
+74,1,4,We have a 4 day break. ,Meena,03:06,186,03:07,187,Neutral,Neutral,Neutral
+75,1,4,Vaibhav and I will revise.,Meena,03:07,187,03:08,188,Neutral,Neutral,Surprise
+76,1,4,Vaibhav and I will revise.,Meenal,03:09,189,03:10,190,Neutral,Surprise,Neutral
+77,1,4,Study.,Meena,03:10,190,03:11,191,Neutral,Neutral,Neutral
+78,1,4," No, no. ",Meenal,03:11,191,03:12,192,Neutral,Neutral,Neutral
+79,1,4, Don't do it.,Meenal,03:12,192,03:13,193,Neutral,Neutral,Neutral
+80,1,4,"Jeetu Bhaiya said to relax, so you should relax.",Meenal,03:13,193,03:16,196,Neutral,Neutral,joy
+81,1,4,"Oh, yes.",Meena,03:18,198,03:19,199,Positive,Joy,Neutral
+82,1,4,Do you also pay heed to everything the teachers say? ,Meena,03:26,206,03:29,209,Neutral,Neutral,Neutral
+83,1,4, Is there another possibility?,Meenal,03:29,209,03:30,210,Neutral,Neutral,joy
+84,1,4,Your thoughts are so pure.,Meena,03:35,215,03:37,217,Positive,joy,Neutral
+85,1,4,Just like mine.,Meena,03:37,217,03:38,218,Positive,joy,Surprise
+86,1,4,"I can't go, buddy. ",Vaibhav,03:42,222,03:43,223,Negative,Sadness,Anger
+87,1,4,Like hell!,Uday,03:43,223,03:44,224,Negative,Anger,Sadness
+88,1,4,I filled 400 rupees worth of petrol in the scooty.,Uday,03:44,224,03:46,226,Negative,Anger,Sadness
+89,1,4,I paid 500 rupees to rent it.,Uday,03:46,226,03:47,227,Negative,Anger,Sadness
+90,1,4,Now you're telling me you won't go.,Uday,03:47,227,03:49,229,Negative,Sadness,Sadness
+91,1,4,"Look, bro.",Vaibhav,03:52,232,03:53,233,Neutral,Neutral,Neutral
+92,1,4,Meena and I want to complete the whole syllabus.. ..during these 4 days.,Vaibhav,03:53,233,03:56,236,Negative,Fear,Anger
+93,1,4,"You always do this, buddy.",Uday,03:56,236,03:58,238,Negative,Anger,Sadness
+94,1,4,You ruined the Dussehra fair plans the same way.,Uday,03:59,239,04:01,241,Negative,Anger,Surprise
+95,1,4,One moment. ,Vaibhav,04:01,241,04:02,242,Neutral,Surprise,Neutral
+96,1,4,I wasn't here at the time of the Dussehra fair.,Vaibhav,04:02,242,04:04,244,Neutral,Surprise,Anger
+97,1,4,Exactly. ,Uday,04:05,245,04:06,246,Negative,Anger,Neutral
+98,1,4, You weren't here then and you aren't now either.,Uday,04:06,246,04:08,248,Negative,Sadness,Surprise
+99,1,4,Bro.,Uday,04:12,252,04:13,253,Negative,Sadness,Neutral
+100,1,4,Shivangi has been avoiding me for a long time.,Uday,04:14,254,04:17,257,Negative,Sadness,Neutral
+101,1,4,I hope she doesn't break up with me.,Uday,04:19,259,04:20,260,Negative,Fear,Neutral
+102,1,4,She isn't even mean enough to wait for another boy to enter her life....before she breaks up with me. ,Uday,04:21,261,04:25,265,Negative,Fear,Neutral
+103,1,4,"Within four days I want to go everywhere from Troika to Talap.. ..seven wonders to C V garden, from Radha Krishna to standing Ganeshji",Uday,04:27,267,04:34,274,Neutral,Neutral,Neutral
+104,1,4,..so that we create so many memories here in Kota..,Uday,04:35,275,04:37,277,Positive,joy,Neutral
+105,1,4,..even the thought of breaking up would torment her heart.,Uday,04:37,277,04:41,281,Neutral,Neutral,Neutral
+106,1,4,"Basic romantic consumerism, buddy.",Uday,04:43,283,04:44,284,Neutral,Neutral,Neutral
+107,1,4,"So, you go, bro.",Vaibhav,04:48,288,04:50,290,Negative,Anger,Neutral
+108,1,4,Why are you making me the third wheel?,Vaibhav,04:50,290,04:52,292,Negative,Anger,Fear
+109,1,4,"Some things can't be done without a third wheel, bro.",Uday,04:52,292,04:55,295,Negative,Fear,Anger
+110,1,4,She will come if all of us go out.,Uday,04:55,295,04:57,297,Neutral,Neutral,Neutral
+111,1,4,She won't come alone.,Uday,04:57,297,04:58,298,Negative,fear,Neutral
+112,1,4,"But our revision, bro.",Vaibhav,04:59,299,05:01,301,Neutral,Neutral,Neutral
+113,1,4,"Yes, that's what I was saying.",Meena,05:00,300,05:01,301,Neutral,Neutral,Neutral
+114,1,4,Due to some unavoidable circumstances we won't be able to revise.,Meena,05:01,301,05:04,304,Neutral,Neutral,Surprise
+115,1,4,I am talking.,Vaibhav,05:02,302,05:03,303,Neutral,Neutral,Neutral
+116,1,4,What? What? What? ,Vaibhav,05:06,306,05:07,307,Negative,Surprise,Neutral
+117,1,4,We have to complete the whole syllabus in 4 days. ,Vaibhav,05:07,307,05:09,309,Negative,Anger,Neutral
+118,1,4,I want to relax. Jeetu Bhaiya said so.,Meena,05:09,309,05:11,311,Neutral,Neutral,Surprise
+119,1,4,"Take me with you, Uday. ",Meena,05:11,311,05:13,313,Neutral,Neutral,Neutral
+120,1,4," You won't retract, will you?",Uday,05:13,313,05:14,314,Neutral,Neutral,Neutral
+121,1,4,Promise me.,Uday,05:14,314,05:15,315,Neutral,Neutral,Neutral
+122,1,4,No. Meena?,Meena,05:17,317,05:18,318,Neutral,Neutral,Neutral
+123,1,4,I think even I should go. ,Vaibhav,05:27,327,05:29,329,Neutral,Neutral,Neutral
+124,1,4, Of course. ,Uday,05:29,329,05:30,330,Negative,Anger(sarcasm),Neutral
+125,1,4,Come along.,Uday,05:30,330,05:30,330,Negative,Anger(sarcasm),Neutral
+126,1,4,Right?,Vaibhav,05:31,331,05:32,332,Neutral,Neutral,Neutral
+127,1,4,Thank you.,Vaibhav,05:32,332,05:33,333,Positive,Joy,Neutral
+128,1,4, Next year.,Uday,05:33,333,05:34,334,Negative,Anger,Neutral
+129,1,4,For the Dussehra fair.,Uday,05:35,335,05:36,336,Negative,Anger,Anger
+130,1,4,You go.,Vaibhav,05:42,342,05:43,343,Negative,Anger,Neutral
+131,1,4, I shall study.,Vaibhav,05:43,343,05:44,344,Negative,Anger,Neutral
+132,1,4,Take this.,Meena,05:52,352,05:53,353,Neutral,Neutral,Neutral
+133,1,4,A Vernier caliper for you.,Meena,05:53,353,05:55,355,Neutral,Neutral,Neutral
+134,1,4,Thanks.,Meenal,05:55,355,05:56,356,Neutral,Neutral,Joy
+135,1,4,What are you doing?,Meenal,06:06,366,06:07,367,Neutral,Neutral,Neutral
+136,1,4,Exactly what you told me to do.,Meena,06:09,369,06:11,371,Neutral,Neutral,Neutral
+137,1,4,Relax.,Meena,06:11,371,06:12,372,Positive,joy,Surprise
+138,1,4,Is the coaching going well?  ,Lab teacher,06:25,385,06:26,386,Negative,Anger(sarcastic),Neutral
+139,1,4," Very good, sir.",Vaibhav,06:26,386,06:27,387,Neutral,Neutral,Anger
+140,1,4, It must be.,Lab teacher,06:27,387,06:28,388,Negative,Anger(sarcastic),Neutral
+141,1,4,You don't have time to write your own lab report.,Lab teacher,06:28,388,06:29,389,Negative,Anger,Neutral
+142,1,4,"No, sir.",Vaibhav,06:30,390,06:31,391,Neutral,Neutral,Anger
+143,1,4,I can tolerate the value of g up to 7. ,Lab teacher,06:31,391,06:34,394,Negative,Anger,Neutral
+144,1,4,But I cannot tolerate lies.,Lab teacher,06:35,395,06:36,396,Negative,Anger,Neutral
+145,1,4,You coaching students don't respect school.,Lab teacher,06:39,399,06:41,401,Negative,Anger,Neutral
+146,1,4,"You have come to school for the first time, haven't you? ",Lab teacher,06:42,402,06:43,403,Negative,Anger,Neutral
+147,1,4," No, sir.",Vaibhav,06:43,403,06:44,404,Neutral,Neutral,Neutral
+148,1,4,I came. ,Vaibhav,06:44,404,06:45,405,Neutral,Neutral,Anger
+149,1,4,  You're lying again. ,Lab teacher,06:45,405,06:45,405,Negative,Anger,Neutral
+150,1,4,"No, sir.",Vaibhav,06:45,405,06:46,406,Neutral,Neutral,Neutral
+151,1,4,I came several times.,Vaibhav,06:46,406,06:47,407,Neutral,Neutral,Neutral
+152,1,4,How much do puffs cost in the canteen?,Lab teacher,06:51,411,06:52,412,Neutral,Neutral,Surprise
+153,1,4,You think I am an idiot? ,Lab teacher,06:55,415,06:56,416,Negative,Anger,Neutral
+154,1,4,I can tell by looking at the handwriting....the chap at the Xerox center has written it. ,Lab teacher,06:56,416,06:59,419,Negative,Anger,Neutral
+155,1,4,This is Gupta's handwriting. ,Lab teacher,06:59,419,07:00,420,Negative,Anger,Neutral
+156,1,4,"You are from Prodigy,aren't you? ",Lab teacher,07:01,421,07:02,422,Negative,Anger,joy
+157,1,4,"Yes, sir.",Vaibhav,07:02,422,07:03,423,Positive,Joy,Anger
+158,1,4,You can't be from Maheshwari. ,Lab teacher,07:03,423,07:04,424,Negative,Anger,Sadness
+159,1,4,Tell Deepak I wish to see him. ,Lab teacher,07:05,425,07:07,427,Neutral,Neutral,Neutral
+160,1,4,If he doesn't come to see me by tomorrow....I will fail all the Prodigy students. ,Lab teacher,07:07,427,07:10,430,Negative,Anger,Neutral
+161,1,4,Then you can keep trying for the JEE advance.,Lab teacher,07:10,430,07:12,432,Negative,Anger,Neutral
+162,1,4,You understand?,Lab teacher,07:13,433,07:14,434,Neutral,Neutral,Fear
+163,1,4,"Yes, sir.",Vaibhav,07:14,434,07:15,435,Negative,fear,Neutral
+164,1,4,Next. ,Lab teacher,07:17,437,07:18,438,Neutral,Neutral,Neutral
+165,1,4, Vartika Ratawal.,Lab teacher,07:19,439,07:20,440,Neutral,Neutral,Neutral
+166,1,4,Meena.,Vaibhav,07:57,477,07:58,478,Neutral,Neutral,Neutral
+167,1,4, I will go with Uday.,Vaibhav,07:58,478,08:00,480,Neutral,Neutral,Surprise
+168,1,4,What about me relaxing? ,Meena,08:00,480,08:01,481,Neutral,Surprise,Neutral
+169,1,4,You relax at home.,Vaibhav,08:02,482,08:03,483,Neutral,Neutral,Sadness
+170,1,4,Where are they going?,Meenal,08:07,487,08:08,488,Neutral,Neutral,Neutral
+171,1,4," To sightsee all of Kota, inside out. ",Meena,08:09,489,08:11,491,Neutral,Neutral,Neutral
+172,1,4,That is such a nice plan.,Meena,08:11,491,08:14,494,Positive,Joy,joy
+173,1,4,"Vaibhav, you hop on Uday's vehicle and you come with me. ",Shivangi,08:32,512,08:34,514,Neutral,Neutral,Neutral
+174,1,4,Excuse me.,Meenal,08:34,514,08:35,515,Neutral,Neutral,Neutral
+175,1,4,"  Hello, friends.",Meenal,08:35,515,08:36,516,Neutral,Neutral,Neutral
+176,1,4,Can I go with all of you to explore Kota?,Meenal,08:36,516,08:39,519,Neutral,Neutral,Surprise
+177,1,4,You are?,Shivangi,08:40,520,08:41,521,Neutral,Neutral,Neutral
+178,1,4, Meenal Parekh. ,Meenal,08:41,521,08:42,522,Neutral,Neutral,Neutral
+179,1,4,(fake coughs) Nerd Alert (fake coughs) Get rid of her.,Uday,08:43,523,08:45,525,Neutral,Neutral,Surprise
+180,1,4,Hello.,Uday,08:47,527,08:47,527,Neutral,Neutral,Neutral
+181,1,4,Hi.,Meenal,08:47,527,08:48,528,Neutral,Neutral,Neutral
+182,1,4,"You're most welcome, but we are already four.",Shivangi,08:49,529,08:52,532,Neutral,Neutral,Neutral
+183,1,4,How can five of us go? ,Shivangi,08:52,532,08:53,533,Neutral,Neutral,Neutral
+184,1,4,Six.,Meena,08:53,533,08:54,534,Neutral,Neutral,Neutral
+185,1,4,Now that everyone is going I shall go too. ,Meena,08:54,534,08:56,536,Neutral,Neutral,Surprise
+186,1,4,Hi. ,Vaibhav,08:56,536,08:57,537,Neutral,Neutral,Surprise
+187,1,4,I'm Vaibhav.,Vaibhav,08:57,537,08:58,538,Neutral,Neutral,Neutral
+188,1,4, Vartika.,Vartika,08:58,538,08:59,539,Neutral,Neutral,Neutral
+189,1,4,"Shiv, why don't you all leave?",Vartika,08:59,539,09:01,541,Neutral,Neutral,Neutral
+190,1,4,I'll take a rain check.,Vartika,09:01,541,09:03,543,Neutral,Neutral,Neutral
+191,1,4,So we'll buy pads on the way.,Shivangi,09:03,543,09:05,545,Neutral,Neutral,Neutral
+192,1,4," No, no. I have some.",Meenal,09:05,545,09:06,546,Neutral,Neutral,Surprise
+193,1,4,No. No. This is not about periods.,Vartika,09:06,546,09:08,548,Neutral,Surprise,Neutral
+194,1,4,I received Maheshwari's sample papers.. ,Vartika,09:09,549,09:10,550,Neutral,Neutral,Neutral
+195,1,4,..and I couldn't solve any of it.,Vartika,09:10,550,09:12,552,Negative,Sadness,Neutral
+196,1,4,"So, I should stay back and prepare for it.",Vartika,09:12,552,09:14,554,Neutral,Neutral,Anger
+197,1,4, I made the entire plan for you.,Shivangi,09:14,554,09:16,556,Negative,Anger,Neutral
+198,1,4, Yes.,Vartika,09:16,556,09:16,556,Neutral,Neutral,Anger
+199,1,4,You're ditching us? ,Shivangi,09:16,556,09:17,557,Negative,Anger,Neutral
+200,1,4,Sorry.,Vartika,09:17,557,09:18,558,Neutral,Neutral,Anger
+201,1,4,Oh! With these boring people.. ,Shivangi,09:18,558,09:19,559,Negative,Anger,Neutral
+202,1,4,..I will get bored.,Shivangi,09:21,561,09:22,562,Neutral,Neutral,Neutral
+203,1,4,She's joking.,Vaibhav,09:22,562,09:23,563,Neutral,Neutral,Neutral
+204,1,4,We are not boring. ,Vaibhav,09:24,564,09:25,565,Neutral,Neutral,Neutral
+205,1,4," Yes, yes.",Uday,09:25,565,09:26,566,Neutral,Neutral,Neutral
+206,1,4,We are very intelligent.,Uday,09:26,566,09:27,567,Neutral,Neutral,Neutral
+207,1,4,These problems will be solved in 30 minutes. ,Uday,09:28,568,09:30,570,Neutral,Neutral,Neutral
+208,1,4,Yes.Very easy. ,Vaibhav,09:30,570,09:31,571,Neutral,Neutral,Neutral
+209,1,4,"Yes, yes.I'll help her solve it.  ",Vaibhav,09:32,572,09:33,573,Neutral,Neutral,Neutral
+210,1,4," No worries, guys.",Vaibhav,09:33,573,09:34,574,Neutral,Neutral,Neutral
+211,1,4,"Shivangi, please. ",Vartika,09:38,578,09:39,579,Neutral,Neutral,Anger
+212,1,4,"No. Vartika, this is not done. ",Shivangi,09:39,579,09:41,581,Negative,Anger,Neutral
+213,1,4,"Please. - Please, Shivangi. Please.",Vaibhav,09:42,582,09:43,583,Neutral,Neutral,Surprise
+214,1,4,Okay.,Shivangi,09:50,590,09:51,591,Neutral,Neutral,Neutral
+215,1,4,Go ahead and study. ,Shivangi,09:51,591,09:52,592,Neutral,Neutral,Neutral
+216,1,4,"Well, alright.",Vaibhav,09:52,592,09:53,593,Neutral,Neutral,Neutral
+217,1,4,Then I won't go either. ,Vaibhav,09:53,593,09:54,594,Neutral,Neutral,Surprise
+218,1,4,Why?,Uday,09:54,594,09:55,595,Negative,Surprise,Neutral
+219,1,4,How many times will you change your mind for one plan?,Uday,09:55,595,09:57,597,Negative,Anger,Neutral
+220,1,4,We aren't going to Goa. ,Uday,09:57,597,09:58,598,Negative,Anger(sacrcatic),Neutral
+221,1,4, I will help her study.,Vaibhav,09:58,598,10:00,600,Neutral,Neutral,Neutral
+222,1,4,It will be a help to her.,Vaibhav,10:01,601,10:01,601,Neutral,Neutral,Neutral
+223,1,4,In any case you are a group of four. ,Vaibhav,10:02,602,10:03,603,Neutral,Neutral,Neutral
+224,1,4,She will study and get help.,Uday,10:03,603,10:05,605,Neutral,Neutral,Neutral
+225,1,4, Meena will do it.,Uday,10:05,605,10:06,606,Neutral,Neutral,Neutral
+226,1,4,"No, no. I shall go out.",Meena,10:06,606,10:07,607,Neutral,Neutral,Neutral
+227,1,4,Jeetu Bhaiya said so.,Meena,10:07,607,10:08,608,Neutral,Neutral,Surprise
+228,1,4,"It is okay, Uday. ",Vaibhav,10:09,609,10:10,610,Neutral,Neutral,Neutral
+229,1,4,I shall make the sacrifice this time.,Vaibhav,10:12,612,10:13,613,Neutral,Neutral,Neutral
+230,1,4,It's fine. ,Vaibhav,10:13,613,10:14,614,Neutral,Neutral,Neutral
+231,1,4," No, no, Vaibhav.You come too.",Meena,10:14,614,10:15,615,Neutral,Neutral,Neutral
+232,1,4,You will burn out if you don't relax. ,Meena,10:15,615,10:17,617,Neutral,Neutral,Neutral
+233,1,4,Come. ,Meena,10:17,617,10:18,618,Neutral,Neutral,Neutral
+234,1,4,We will adjust. Come. ,Meena,10:18,618,10:19,619,Neutral,Neutral,Neutral
+235,1,4," No, no. You go.",Vaibhav,10:19,619,10:20,620,Neutral,Neutral,Neutral
+236,1,4,You guys carry on.,Vaibhav,10:20,620,10:21,621,Neutral,Neutral,Sadness
+237,1,4,"It's okay, buddy. ",Vaibhav,10:22,622,10:23,623,Neutral,Neutral,Neutral
+238,1,4,"One spot is available now, right? ",Meenal,10:23,623,10:26,626,Neutral,Neutral,Neutral
+239,1,4,Yeah!,Meenal,10:26,626,10:27,627,Positive,Joy,Neutral
+240,1,4,Thanks.,Meenal,10:27,627,10:28,628,Positive,Joy,Neutral
+241,1,4,You're sure you won't come?,Shivangi,10:31,631,10:32,632,Negative,Sadness,Neutral
+242,1,4,You will miss a lot.,Shivangi,10:34,634,10:35,635,Neutral,Neutral,Neutral
+243,1,4,Hold this Meena. ,Shivangi,10:38,638,10:39,639,Neutral,Neutral,Neutral
+244,1,4,Let's go.,Uday,10:41,641,10:42,642,Neutral,Neutral,Neutral
+245,1,4,"Bye, you guys. ",Shivangi,10:47,647,10:48,648,Neutral,Neutral,Neutral
+246,1,4,Bye.,Vaibhav,10:48,648,10:49,649,Neutral,Neutral,Neutral
+247,1,4,Don't be tense. ,Vaibhav,11:05,665,11:07,667,Neutral,Neutral,Neutral
+248,1,4, We will do the paper. ,Vaibhav,11:07,667,11:08,668,Neutral,Neutral,Neutral
+249,1,4,Just relax.,Vaibhav,11:08,668,11:09,669,Neutral,Neutral,Neutral
+250,1,4,Thanks.,Vartika,11:10,670,11:11,671,Neutral,Neutral,Neutral
+251,1,4,I'm Vartika. ,Vartika,11:12,672,11:13,673,Neutral,Neutral,joy
+252,1,4, Ratawal. ,Vaibhav,11:13,673,11:14,674,Positive,Joy,Surprise
+253,1,4, I know. I know.,Vaibhav,11:14,674,11:15,675,Positive,Joy,Neutral
+254,1,4,Sorry. ,Vaibhav,11:18,678,11:19,679,Neutral,Neutral,Neutral
+255,1,4,You introduced yourself earlier. ,Vaibhav,11:19,679,11:20,680,Neutral,Neutral,Neutral
+256,1,4,Okay.,Vartika,11:21,681,11:22,682,Neutral,Neutral,Neutral
+257,1,4,Sorry. Actually I didn't hear your name earlier. ,Vartika,11:25,685,11:28,688,Neutral,Neutral,Neutral
+258,1,4,That's why I introduced myself again hoping you would repeat your name.,Vartika,11:28,688,11:32,692,Neutral,Neutral,Neutral
+259,1,4,"So, your name?",Vartika,11:34,694,11:35,695,Neutral,Neutral,Neutral
+260,1,4,Vaibhav. ,Vaibhav,11:35,695,11:36,696,Neutral,Neutral,Neutral
+261,1,4,Vaibhav Ratawal.,Vaibhav,11:36,696,11:37,697,Negative,fear,Surprise
+262,1,4,"Oh, sorry. How can I be Ratawal? ",Vaibhav,11:37,697,11:38,698,Neutral,Neutral,Neutral
+263,1,4,Vaibhav Pandey.,Vaibhav,11:38,698,11:39,699,Neutral,Neutral,Neutral
+264,1,4,"It was a little awkward, wasn't it?",Vaibhav,11:41,701,11:42,702,Neutral,Neutral,Neutral
+265,1,4,But don't worry. ,Vaibhav,11:43,703,11:44,704,Neutral,Neutral,Neutral
+266,1,4,We will solve the paper.,Vaibhav,11:44,704,11:45,705,Neutral,Neutral,Neutral
+267,1,4,Okay.,Vartika,11:45,705,11:46,706,Neutral,Neutral,Neutral
+268,1,4,You.. Sorry. Just relax,Vaibhav,11:46,706,11:48,708,Neutral,Neutral,Neutral
+269,1,4,"No, no. Thank you.",Vartika,11:48,708,11:50,710,Neutral,Neutral,Neutral
+270,1,4,Shall we?,Vaibhav,11:50,710,11:51,711,Neutral,Neutral,Neutral
+271,1,4,What irony! ,Shivangi,12:10,730,12:11,731,Neutral,Neutral,Neutral
+272,1,4,The cold coffee is the most famous dish at Chai paani. ,Shivangi,12:11,731,12:12,732,Positive,Joy,joy
+273,1,4,One cold coffee.,Meenal,12:14,734,12:15,735,Neutral,Neutral,Neutral
+274,1,4,Two.,Meena,12:15,735,12:16,736,Neutral,Neutral,Neutral
+275,1,4," Shivangi, you are in Medical, aren't you?",Meenal,12:18,738,12:20,740,Neutral,Neutral,Neutral
+276,1,4,I too wanted to be a doctor when I was young,Meenal,12:21,741,12:23,743,Neutral,Neutral,Neutral
+277,1,4,but..,Meenal,12:23,743,12:24,744,Negative,Sadness,Neutral
+278,1,4, But what?,Shivangi,12:25,745,12:26,746,Neutral,Neutral,Neutral
+279,1,4,But when I grew up I turned out to be pretty emotional.,Meenal,12:26,746,12:29,749,Neutral,Neutral,Neutral
+280,1,4,My dad said doctors can't be so emotional..,Meenal,12:29,749,12:32,752,Neutral,Neutral,Neutral
+281,1,4,"..so, I chose engineering. ",Meenal,12:32,752,12:34,754,Positive,joy,Neutral
+282,1,4, You too are emotional?,Meena,12:34,754,12:36,756,Neutral,Neutral,Neutral
+283,1,4,Yes.,Meena,12:36,756,12:37,757,Neutral,Neutral,joy
+284,1,4,Look at this question. ,Vartika,12:42,762,12:43,763,Neutral,Neutral,Neutral
+285,1,4,Yes. ,Vaibhav,12:43,763,12:44,764,Neutral,Neutral,Neutral
+286,1,4,Question.,Vaibhav,12:44,764,12:45,765,Neutral,Neutral,Neutral
+287,1,4," Firstly, you shouldn't see the question.",Vaibhav,12:46,766,12:48,768,Neutral,Neutral,Surprise
+288,1,4,what? ,Vartika,12:49,769,12:50,770,Neutral,Surprise,Neutral
+289,1,4,Jeetu Bhaiya says to check the last line of the question first.,Vaibhav,12:50,770,12:54,774,Neutral,Neutral,Neutral
+290,1,4,Then one should check the options. ,Vaibhav,12:54,774,12:56,776,Neutral,Neutral,Neutral
+291,1,4,"For example, it says here what will the temperature of the vessel be?",Vaibhav,12:56,776,13:00,780,Neutral,Neutral,Neutral
+292,1,4,Look at the options.,Vaibhav,13:01,781,13:02,782,Neutral,Neutral,Neutral
+293,1,4,"The temperature can't be calculated in joules, moles or calories.",Vaibhav,13:03,783,13:06,786,Neutral,Neutral,Neutral
+294,1,4,"So, D 25 celcius is the correct answer.",Vaibhav,13:06,786,13:09,789,Neutral,Neutral,Neutral
+295,1,4,This wasn't a thermo question at all. ,Vaibhav,13:11,791,13:13,793,Neutral,Neutral,Neutral
+296,1,4, It was a common sense question. ,Vaibhav,13:14,794,13:15,795,Positive,Joy,joy
+297,1,4,"Oh, yes! ",Vartika,13:15,795,13:16,796,Positive,Joy,Neutral
+298,1,4,Actually I did not pay attention.,,13:16,796,13:18,798,Neutral,Neutral,Neutral
+299,1,4,"By the way, is your brother also in IIT?",Vartika,13:19,799,13:21,801,Neutral,Neutral,Neutral
+300,1,4,"No, no. ",Vaibhav,13:21,801,13:22,802,Neutral,Neutral,Neutral
+301,1,4,Brother is a Compounder.,Vaibhav,13:22,802,13:23,803,Neutral,Neutral,Surprise
+302,1,4,What? ,Vartika,13:24,804,13:25,805,Neutral,Surprise,Fear
+303,1,4,Jeetu Bhaiya. ,Vaibhav,13:26,806,13:27,807,Negative,fear,Neutral
+304,1,4, Jeetu Bhaiya is in IIT. ,Vaibhav,13:28,808,13:29,809,Neutral,Neutral,Neutral
+305,1,4,I see.,Vartika,13:29,809,13:30,810,Neutral,Neutral,Neutral
+306,1,4,He teaches at Prodigy.,Vaibhav,13:29,809,13:30,810,Neutral,Neutral,Neutral
+307,1,4,Okay.,Vartika,13:30,810,13:31,811,Neutral,Neutral,Neutral
+308,1,4,Yes.,Vaibhav,13:31,811,13:32,812,Neutral,Neutral,Neutral
+309,1,4, I too should have joined classes at the beginning.,Vartika,13:32,812,13:34,814,Negative,Sadness,Neutral
+310,1,4,Everything is in a mess now.,Vartika,13:34,814,13:36,816,Negative,Anger,Neutral
+311,1,4,Don't worry. ,Vaibhav,13:37,817,13:38,818,Neutral,Neutral,Neutral
+312,1,4,I'll convert your mess into reasons.,Vaibhav,13:38,818,13:40,820,Neutral,Neutral,Neutral
+313,1,4,Good reasons.,Vaibhav,13:40,820,13:41,821,Neutral,Neutral,Joy
+314,1,4,Okay. ,Vartika,13:43,823,13:44,824,Positive,Joy,joy
+315,1,4,Shall we do the next?,Vaibhav,13:45,825,13:46,826,Neutral,Neutral,Neutral
+316,1,4,Yes.,Vartika,13:46,826,13:47,827,Neutral,Neutral,Neutral
+317,1,4,Read the last line.,Vaibhav,13:48,828,13:49,829,Neutral,Neutral,Neutral
+318,1,4,Stay in your limits.,Shivangi,14:01,841,14:02,842,Negative,Anger,Neutral
+319,1,4," This is such a good family atmosphere, isn't it?",Meena,14:06,846,14:07,847,Positive,Joy,joy
+320,1,4,Yes.,Meenal,14:07,847,14:08,848,Positive,Joy,joy
+321,1,4,Next time I shall bring my parents here,Meenal,14:08,848,14:11,851,Positive,Joy,joy
+322,1,4, Yes.,Meena,14:11,851,14:12,852,Positive,Joy,joy
+323,1,4,Uday! ,Shivangi,14:17,857,14:18,858,Negative,Fear,Neutral
+324,1,4,You think it is proper to leave the two of them alone?,Shivangi,14:19,859,14:21,861,Negative,Fear,Surprise
+325,1,4,You're afraid of Meena?,Uday,14:21,861,14:22,862,Negative,Surprise,Neutral
+326,1,4,I am afraid for Meena. ,Shivangi,14:23,863,14:24,864,Neutral,Neutral,Neutral
+327,1,4,You're sure?,Shivangi,14:26,866,14:27,867,Negative,fear,Neutral
+328,1,4,The entire year is about to end but I still don't know your whole name.,Meenal,14:29,869,14:34,874,Neutral,Neutral,Neutral
+329,1,4,"Meena, what is your surname?",Meenal,14:34,874,14:37,877,Neutral,Neutral,joy
+330,1,4,My surname is Meena.,Meena,14:39,879,14:40,880,Positive,joy,Neutral
+331,1,4, My name is Balmukund Meena.,Meena,14:41,881,14:42,882,Neutral,Neutral,Neutral
+332,1,4,Everybody endearingly calls me Meena. ,Meena,14:43,883,14:45,885,Neutral,Neutral,Neutral
+333,1,4,What are you called endearingly? ,Meena,14:47,887,14:49,889,Neutral,Neutral,Neutral
+334,1,4,Jhamkudi.,Meenal,14:49,889,14:50,890,Positive,Joy,Surprise
+335,1,4,Jhamkudi.  ,Meena,14:51,891,14:52,892,Positive,Surprise,Neutral
+336,1,4,It's a nice name.,Meena,14:52,892,14:53,893,Positive,Joy,Joy
+337,1,4,Isn't it? ,Meenal,14:53,893,14:54,894,Positive,Joy,Joy
+338,1,4, Yes.,Meena+ Meenal,14:54,894,14:55,895,Positive,Joy,Joy
+339,1,4,Meenal is so straight and simple.,Uday,14:56,896,14:57,897,Neutral,Neutral,Neutral
+340,1,4, I bet she doesn't play the knight in chess.,Uday,14:58,898,15:00,900,Neutral,Neutral,Neutral
+341,1,4,Isn't that true?,Shivangi,15:03,903,15:04,904,Positive,Joy,Neutral
+342,1,4,"Incidentally Meena and Meenal would make a nice pair, wouldn't they?",Shivangi,15:05,905,15:08,908,Positive,Joy,Neutral
+343,1,4,"Meena, Meenal. ",Shivangi,15:09,909,15:10,910,Positive,Joy,Neutral
+344,1,4," Meenal, Meena.",Shivangi,15:10,910,15:12,912,Positive,Joy,Joy
+345,1,4,Ladies first.,Vaibhav,15:21,921,15:22,922,Neutral,Neutral,Neutral
+346,1,4,"Thanks, Vaibhav. ",Vartika,15:27,927,15:28,928,Neutral,Neutral,Neutral
+347,1,4,For? ,Vaibhav,15:28,928,15:29,929,Neutral,Neutral,Neutral
+348,1,4,You helped me solve all three papers. ,Vartika,15:29,929,15:30,930,Neutral,Neutral,Neutral
+349,1,4,Yes. ,Vaibhav,15:30,930,15:31,931,Neutral,Neutral,Neutral
+350,1,4, I got through it all in one day.,Vartika,15:31,931,15:33,933,Neutral,Neutral,Neutral
+351,1,4,I would have taken seven days to get through it. ,Vartika,15:33,933,15:35,935,Neutral,Neutral,Neutral
+352,1,4,That's right.,Vaibhav,15:36,936,15:37,937,Neutral,Neutral,Neutral
+353,1,4,We got through it all in one day.,Vaibhav,15:37,937,15:39,939,Neutral,Neutral,Joy
+354,1,4,"Yes, that is true.",Vartika,15:39,939,15:40,940,Positive,Joy,Neutral
+355,1,4,Nothing is left for the remaining days.,Vaibhav,15:40,940,15:42,942,Negative,Sadness,Neutral
+356,1,4,"No, no.I have something left. ",Vartika,15:42,942,15:43,943,Neutral,Neutral,Neutral
+357,1,4,I shall revise the whole syllabus.,Vartika,15:43,943,15:45,945,Neutral,Neutral,Neutral
+358,1,4,Good.,Vaibhav,15:46,946,15:47,947,Neutral,Neutral,Neutral
+359,1,4,Okay.,Vaibhav,15:48,948,15:49,949,Neutral,Neutral,Neutral
+360,1,4,Let me know if you have any problem.,Vaibhav,15:50,950,15:52,952,Neutral,Neutral,Neutral
+361,1,4,Okay. Bye-bye.,Vartika,15:52,952,15:53,953,Neutral,Neutral,Neutral
+362,1,4,"Incidentally, I could help you with your revision. ",Vaibhav,15:57,957,16:00,960,Neutral,Neutral,Neutral
+363,1,4,Yes!,Vaibhav,16:00,960,16:01,961,Positive,Joy,Neutral
+364,1,4,I could help you with your revision.,,16:01,961,16:02,962,Positive,Joy,Neutral
+365,1,4,I am very talented.,Vaibhav,16:02,962,16:03,963,Positive,Joy,Neutral
+366,1,4, I can help anyone memorize anything. ,Vaibhav,16:03,963,16:05,965,Positive,Joy,Neutral
+367,1,4,Shall I remind you of your position? ,Uday,16:05,965,16:06,966,Negative,Anger,Neutral
+368,1,4,"Uday, bro I can't go out.",Uday,16:06,966,16:07,967,Negative,Anger,Neutral
+369,1,4,I have to study. ,Uday,16:07,967,16:08,968,Negative,Anger,Neutral
+370,1,4,I have my reshuffling exam.,Uday,16:08,968,16:09,969,Negative,Anger,Neutral
+371,1,4,Non sense! ,Uday,16:09,969,16:10,970,Negative,Anger,Neutral
+372,1,4,"Yes, well. ",Vaibhav,16:11,971,16:12,972,Neutral,Neutral,Neutral
+373,1,4,I didn't go out.,Vaibhav,16:13,973,16:14,974,Neutral,Neutral,Neutral
+374,1,4,I was studying.,Vaibhav,16:14,974,16:15,975,Neutral,Neutral,Anger
+375,1,4,"You weren't studying, scoundrel.",Uday,16:15,975,16:16,976,Negative,Anger,Neutral
+376,1,4,You were clinging.,Uday,16:16,976,16:17,977,Negative,Anger,Neutral
+377,1,4,Onto her.,Uday,16:17,977,16:18,978,Negative,Anger,Neutral
+378,1,4,Listen.,Uday,16:20,980,16:21,981,Neutral,Neutral,Neutral
+379,1,4,"You sat up to teach her today, didn't you? ",Uday,16:22,982,16:24,984,Neutral,Neutral,Neutral
+380,1,4,Teach her in a sleeping position tomorrow. ,Uday,16:24,984,16:26,986,Neutral,Neutral,Anger
+381,1,4,Shut up! Scoundrel!,Vaibhav,16:26,986,16:27,987,Negative,Anger,Neutral
+382,1,4,It is the truth. ,Uday,16:27,987,16:28,988,Neutral,Neutral,Neutral
+383,1,4," Isn't that right, Meena?",Uday,16:28,988,16:29,989,Neutral,Neutral,Neutral
+384,1,4,What's the matter with him?,Uday,16:33,993,16:34,994,Neutral,Surprise,Neutral
+385,1,4,Has your Deepak lost his mind?,Lab teacher,16:38,998,16:39,999,Negative,Anger,Neutral
+386,1,4,Doesn't he want to run the coaching classes anymore? ,Lab teacher,16:39,999,16:41,1001,Negative,Anger,Neutral
+387,1,4,I told him to come and see you.,Vaibhav,16:41,1001,16:43,1003,Neutral,Neutral,Neutral
+388,1,4,You told him? ,Lab teacher,16:44,1004,16:45,1005,Neutral,Neutral,Neutral
+389,1,4,Yes. ,Vaibhav,16:45,1005,16:45,1005,Neutral,Neutral,Neutral
+390,1,4,"Well, alright.",Lab teacher,16:46,1006,16:47,1007,Neutral,Neutral,Neutral
+391,1,4,What did you tell him my name is?,Lab teacher,16:48,1008,16:49,1009,Neutral,Neutral,Fear
+392,1,4,Vice-Principal Mehta sir.,Lab teacher,16:56,1016,16:58,1018,Negative,Anger,Neutral
+393,1,4,Modern heart.,Lab teacher,16:58,1018,16:59,1019,Negative,Anger,Surprise
+394,1,4, I see.That's you.,Vaibhav,16:59,1019,17:00,1020,Neutral,Surprise,Anger
+395,1,4,You go. I will deal with him.,Lab teacher,17:02,1022,17:03,1023,Negative,Anger,Neutral
+396,1,4,Next! ,Lab teacher,17:03,1023,17:04,1024,Negative,Anger,Neutral
+397,1,4, Vartika Ratawal.,Lab teacher,17:06,1026,17:07,1027,Positive,Joy,Neutral
+398,1,4,"Bye, guys.See you.",Shivangi,17:40,1060,17:41,1061,Neutral,Neutral,Neutral
+399,1,4,I don't feel right about this. ,Vartika,17:48,1068,17:50,1070,Negative,Sadness,Surprise
+400,1,4,Why?,Vaibhav,17:51,1071,17:52,1072,Neutral,Surprise,Neutral
+401,1,4,Didn't you enjoy?,Vaibhav,17:53,1073,17:54,1074,Negative,Surprise,Neutral
+402,1,4,I can teach you even better. ,Vaibhav,17:54,1074,17:56,1076,Neutral,Neutral,Neutral
+403,1,4,I can even crack jokes if you like. ,Vaibhav,17:56,1076,17:58,1078,Neutral,Neutral,Surprise
+404,1,4,What? ,Vartika,17:58,1078,17:59,1079,Neutral,Surprise,Neutral
+405,1,4,"No, that's not what I meant.",Vartika,17:59,1079,18:00,1080,Neutral,Neutral,Surprise
+406,1,4,You wanted to go out with them and I kept you here.,Vartika,18:00,1080,18:03,1083,Negative,Sadness,Neutral
+407,1,4,Oh!,Vaibhav,18:03,1083,18:04,1084,Positive,Joy,Neutral
+408,1,4, No. No. No.,Vaibhav,18:04,1084,18:06,1086,Neutral,Neutral,Neutral
+409,1,4,It's not that. ,Vaibhav,18:06,1086,18:07,1087,Neutral,Neutral,Neutral
+410,1,4,Even I wanted to do my revision. ,Vaibhav,18:08,1088,18:09,1089,Neutral,Neutral,Surprise
+411,1,4,Even I have to sit for Maheshwari's exam.,Vaibhav,18:10,1090,18:12,1092,Neutral,Neutral,Surprise
+412,1,4,Even you have to sit for it? ,Vartika,18:13,1093,18:14,1094,Neutral,Surprise,Fear
+413,1,4,"Yes, really.",Vaibhav,18:14,1094,18:15,1095,Negative,Fear,Neutral
+414,1,4, Why would I lie? ,Vaibhav,18:15,1095,18:16,1096,Negative,Fear,Surprise
+415,1,4,When did I say you were lying? ,Vartika,18:17,1097,18:19,1099,Neutral,Surprise,Fear
+416,1,4,Yes.,Vaibhav,18:19,1099,18:20,1100,Negative,Fear,Neutral
+417,1,4,"Yes, exactly. Exactly.",Vaibhav,18:20,1100,18:21,1101,Negative,Fear,Neutral
+418,1,4,Crap!,Vaibhav,18:22,1102,18:23,1103,Negative,Anger,Neutral
+419,1,4,"If that's the case, then it's okay.",Vartika,18:23,1103,18:25,1105,Neutral,Neutral,Neutral
+420,1,4, We could study together.,Vartika,18:25,1105,18:26,1106,Neutral,Neutral,Neutral
+421,1,4,"Yes, we can. ",Vaibhav,18:30,1110,18:31,1111,Neutral,Neutral,Neutral
+422,1,4,It's a good idea.,Vaibhav,18:31,1111,18:32,1112,Neutral,Neutral,Neutral
+423,1,4, It's possible.,Vaibhav,18:32,1112,18:33,1113,Neutral,Neutral,Neutral
+424,1,4,"By the way, which center did you get? ",Vartika,18:38,1118,18:40,1120,Neutral,Neutral,Neutral
+425,1,4,I haven't got it as yet.,Vaibhav,18:41,1121,18:42,1122,Neutral,Neutral,Surprise
+426,1,4,I will get it. ,Vaibhav,18:43,1123,18:44,1124,Neutral,Neutral,Surprise
+427,1,4,I will get it when I fill the form.,Vaibhav,18:44,1124,18:45,1125,Neutral,Neutral,Surprise
+428,1,4,You haven't filled the form as yet? ,Vartika,18:46,1126,18:47,1127,Neutral,Surprise,Neutral
+429,1,4, No. ,Vaibhav,18:47,1127,18:48,1128,Neutral,Neutral,Surprise
+430,1,4,Today is the last date. ,Vartika,18:48,1128,18:49,1129,Neutral,Surprise,Surprise
+431,1,4, What?,Vaibhav,18:49,1129,18:50,1130,Neutral,Surprise,Neutral
+432,1,4,Don't take off your jackets. ,Uday,19:12,1152,19:13,1153,Neutral,Neutral,Neutral
+433,1,4,The uniform should not be visible.,Uday,19:13,1153,19:15,1155,Neutral,Neutral,Neutral
+434,1,4,I will place the order. ,Uday,19:16,1156,19:17,1157,Neutral,Neutral,Neutral
+435,1,4, You sit tight.,Uday,19:17,1157,19:19,1159,Neutral,Neutral,Neutral
+436,1,4,Don't say a word. ,Uday,19:20,1160,19:21,1161,Neutral,Neutral,Neutral
+437,1,4,"No matter what, never show your I-card.",Uday,19:22,1162,19:25,1165,Neutral,Neutral,Neutral
+438,1,4,"If anyone asks for your ID, tell them proudly. ",Uday,19:25,1165,19:28,1168,Neutral,Neutral,Neutral
+439,1,4,I don't have it. ,Meena,19:28,1168,19:29,1169,Neutral,Neutral,Neutral
+440,1,4,I don't have it.,Shivangi,19:29,1169,19:30,1170,Neutral,Neutral,Neutral
+441,1,4,"I don't have it, uncle. ",Meenal,19:31,1171,19:32,1172,Negative,Fear,Neutral
+442,1,4,"Sir, you have to present an ID to sit here.",Waiter,19:32,1172,19:34,1174,Neutral,Neutral,Neutral
+443,1,4, Why do I have to present it?,Meena,19:34,1174,19:36,1176,Neutral,Neutral,Neutral
+444,1,4,So we know your age.,Waiter,19:36,1176,19:37,1177,Neutral,Neutral,Neutral
+445,1,4,"So, ask me my age.",Meena,19:37,1177,19:39,1179,Neutral,Neutral,Neutral
+446,1,4,Seventeen.,Meena,19:39,1179,19:40,1180,Neutral,Neutral,Neutral
+447,1,4,"Lights were so amazing inside, weren't they?",Meenal,19:44,1184,19:47,1187,Negative,Sadness,Neutral
+448,1,4,Reflection.,Meena,19:47,1187,19:48,1188,Neutral,Neutral,Neutral
+449,1,4,I told you in the first place. ,Shivangi,19:49,1189,19:50,1190,Negative,Anger,Neutral
+450,1,4,Let's go to Talap....but you don't want to pay heed to me.,Shivangi,19:50,1190,19:53,1193,Negative,Anger,Neutral
+451,1,4,"Baby, they demand IDs even over there. ",Uday,19:53,1193,19:55,1195,Neutral,Neutral,Anger
+452,1,4," They must be demanding them from others, not from the staff.",Shivangi,19:56,1196,19:58,1198,Negative,Anger,Neutral
+453,1,4,"Meena, give me a marker",Shivangi,19:59,1199,20:00,1200,Neutral,Neutral,Neutral
+454,1,4, Yes.,Meena,20:01,1201,20:02,1202,Neutral,Neutral,Surprise
+455,1,4,Back.,Shivangi,20:05,1205,20:06,1206,Neutral,Neutral,Neutral
+456,1,4,"Thank you, ma'am.",Vartika,20:55,1255,20:56,1256,Neutral,Neutral,Neutral
+457,1,4, Never mind that. Fill the form and return it quickly.,Receptionist,20:56,1256,20:57,1257,Neutral,Neutral,Surprise
+458,1,4,You too are a Virgo? ,Vartika,21:04,1264,21:06,1266,Neutral,Surprise,Neutral
+459,1,4,Yes.,Vaibhav,21:06,1266,21:07,1267,Neutral,Neutral,Neutral
+460,1,4,You too? ,Vaibhav,21:07,1267,21:08,1268,Neutral,Neutral,Neutral
+461,1,4,No.,Vartika,21:08,1268,21:09,1269,Neutral,Neutral,Neutral
+462,1,4, My boyfriend was.,Vartika,21:09,1269,21:10,1270,Neutral,Neutral,Neutral
+463,1,4,Oh! ,Vaibhav,21:10,1270,21:11,1271,Neutral,Neutral,Neutral
+464,1,4,You don't have a boyfriend now? ,Vaibhav,21:13,1273,21:15,1275,Neutral,Neutral,Neutral
+465,1,4,"No, we broke up.",Vartika,21:15,1275,21:17,1277,Neutral,Neutral,Joy
+466,1,4,Good. Good.,Vaibhav,21:18,1278,21:19,1279,Positive,Joy,Neutral
+467,1,4, Why did you break up? ,Vaibhav,21:21,1281,21:22,1282,Negative,Fear,Neutral
+468,1,4,He never studies.,Vartika,21:22,1282,21:24,1284,Neutral,Neutral,Neutral
+469,1,4,That is wrong. ,Vaibhav,21:25,1285,21:26,1286,Neutral,Neutral,Surprise
+470,1,4,That is very wrong.,Vaibhav,21:27,1287,21:28,1288,Neutral,Neutral,Neutral
+471,1,4, I study a lot. ,Vaibhav,21:28,1288,21:29,1289,Neutral,Neutral,Neutral
+472,1,4,I love studies.,Vaibhav,21:29,1289,21:31,1291,Neutral,Neutral,Neutral
+473,1,4,"I mean to say, not all Virgos are the same. Right? ",Vaibhav,21:34,1294,21:37,1297,Negative,Fear,Neutral
+474,1,4,Some Virgos are hard-working. ,Vaibhav,21:37,1297,21:39,1299,Neutral,Neutral,Neutral
+475,1,4, Some are compassionate.,Vaibhav,21:39,1299,21:41,1301,Neutral,Neutral,Neutral
+476,1,4,Some are lovers. ,Vaibhav,21:41,1301,21:42,1302,Neutral,Neutral,Surprise
+477,1,4,Friendly lovers. ,Vaibhav,21:43,1303,21:44,1304,Negative,Fear,Neutral
+478,1,4,Friendly lovers.,Vaibhav,21:44,1304,21:45,1305,Negative,Fear,Neutral
+479,1,4,It's wrong to stereotype. ,Vaibhav,21:46,1306,21:47,1307,Neutral,Neutral,Neutral
+480,1,4,It's wrong to stereotype.,Vaibhav,21:48,1308,21:49,1309,Neutral,Neutral,Neutral
+481,1,4,"What do you think, sister? ",Vaibhav,21:49,1309,21:50,1310,Neutral,Neutral,Neutral
+482,1,4,Fill the form and return it quickly.,Receptionist,21:50,1310,21:51,1311,Neutral,Neutral,Surprise
+483,1,4,Your love for the girl made you study and you even taught her. ,Uday,21:57,1317,22:00,1320,Negative,Anger,Neutral
+484,1,4, Now you went and filled Maheshwari's form too?,Uday,22:00,1320,22:02,1322,Negative,Anger,Neutral
+485,1,4,"Love is blind, bro, not insane. ",Uday,22:03,1323,22:05,1325,Negative,Anger,Neutral
+486,1,4,"Right, Meena?",Uday,22:06,1326,22:07,1327,Neutral,Neutral,Neutral
+487,1,4,Where have you been taking him every day?,Vaibhav,22:11,1331,22:13,1333,Negative,Surprise,Neutral
+488,1,4,I guess I will see you again next year. ,Lab teacher,22:16,1336,22:18,1338,Negative,Anger,Neutral
+489,1,4,"No, no. Sir.. ..I shall come for the final exam.",Vaibhav,22:18,1338,22:22,1342,Neutral,Neutral,Anger
+490,1,4,You will come?,Lab teacher,22:22,1342,22:23,1343,Negative,Anger,Neutral
+491,1,4,Certainly. ,Vaibhav,22:23,1343,22:23,1343,Neutral,Neutral,Anger
+492,1,4,Certainly?,Lab teacher,22:23,1343,22:24,1344,Negative,Anger,Neutral
+493,1,4,Certainly ,Vaibhav,22:24,1344,22:25,1345,Neutral,Neutral,Anger
+494,1,4,Promise?,Lab teacher,22:25,1345,22:26,1346,Negative,Anger,Fear
+495,1,4,Promise.,Vaibhav,22:28,1348,22:29,1349,Negative,Fear,Neutral
+496,1,4,Go there.,Lab teacher,22:31,1351,22:32,1352,Neutral,Neutral,Neutral
+497,1,4,Next. ,Lab teacher,22:34,1354,22:35,1355,Neutral,Neutral,Neutral
+498,1,4,Vartika. ,Lab teacher,22:36,1356,22:37,1357,Positive,Joy,Neutral
+499,1,4,Vartika Ratawal.,Lab teacher,22:38,1358,22:39,1359,Neutral,Neutral,Neutral
+500,1,4,Your house is very nice.,Vaibhav,23:10,1390,23:12,1392,Positive,Joy,Neutral
+501,1,4,Thank you.,Vartika,23:12,1392,12:13,733,Neutral,Neutral,Neutral
+502,1,4,Sometimes I feel like shifting here.,Vaibhav,23:13,1393,23:14,1394,Neutral,Neutral,Surprise
+503,1,4,Huh? ,Vartika,23:14,1394,23:15,1395,Neutral,Surprise,Fear
+504,1,4, For studies.,Vaibhav,23:15,1395,23:16,1396,Negative,Fear,Neutral
+505,1,4,Ladies first. ,Vaibhav,23:18,1398,23:19,1399,Neutral,Neutral,Neutral
+506,1,4," Hey, boy!",uncle,23:20,1400,23:21,1401,Negative,Anger,Anger
+507,1,4,Who is it? ,Vaibhav,23:21,1401,23:22,1402,Negative,Anger,Anger
+508,1,4,Up. Up.,uncle,23:22,1402,23:23,1403,Negative,Anger,Neutral
+509,1,4,"Greetings, uncle. ",Vaibhav,23:24,1404,23:25,1405,Neutral,Neutral,Neutral
+510,1,4,"Yes, yes.",uncle,23:25,1405,23:26,1406,Neutral,Neutral,Neutral
+511,1,4,"Okay, okay.",uncle,23:26,1406,23:27,1407,Neutral,Neutral,Neutral
+512,1,4,You cannot come in.,uncle,23:27,1407,23:28,1408,Negative,Anger,Surprise
+513,1,4,Why? ,Vaibhav,23:28,1408,23:29,1409,Neutral,Surprise,Neutral
+514,1,4,This PG is for girls.,uncle,23:29,1409,23:30,1410,Neutral,Neutral,Neutral
+515,1,4,I allowed you yesterday. ,uncle,23:30,1410,23:31,1411,Neutral,Neutral,Neutral
+516,1,4, I thought you must be her brother. ,uncle,23:31,1411,23:32,1412,Neutral,Neutral,Anger
+517,1,4,Uncle! I am not her brother. ,Vaibhav,23:32,1412,23:33,1413,Negative,Anger,Anger
+518,1,4,"That's why I say, out!",uncle,23:33,1413,23:34,1414,Negative,Anger,Neutral
+519,1,4,"Uncle, you are confusing me for her boyfriend, aren't you? ",Vaibhav,23:34,1414,23:36,1416,Neutral,Neutral,Neutral
+520,1,4,No.,Vaibhav,23:36,1416,23:37,1417,Neutral,Neutral,Neutral
+521,1,4,Close friend. ,Vaibhav,23:37,1417,23:38,1418,Neutral,Neutral,Anger
+522,1,4,Go! Get out of here!,uncle,23:38,1418,23:39,1419,Negative,Anger,Sadness
+523,1,4,What kind of an uncle is he? ,Vaibhav,23:42,1422,23:43,1423,Neutral,Neutral,Neutral
+524,1,4, He is publicly calling me brother.,Vaibhav,23:43,1423,23:45,1425,Neutral,Neutral,Neutral
+525,1,4, Your brother will be offended. ,Vaibhav,23:46,1426,23:48,1428,Neutral,Neutral,Neutral
+526,1,4,Come on! Get going!,uncle,23:48,1428,23:49,1429,Negative,Anger,Neutral
+527,1,4,Whoo!,Vaibhav,24:19:00,1459,24:20:00,1460,Positive,Joy,Neutral
+528,1,4,One moment.Don't come inside.,Vaibhav,24:21:00,1461,24:22:00,1462,Negative,Fear,Neutral
+529,1,4,Please. Please.,Vaibhav,24:22:00,1462,24:23:00,1463,Negative,Fear,Neutral
+530,1,4,"Your aunty won't have a problem here, will she? ",Vartika,24:26:00,1466,24:28:00,1468,Neutral,Neutral,Neutral
+531,1,4,"No, no. What problem would aunty have?",Vaibhav,24:29:00,1469,24:31:00,1471,Neutral,Neutral,Neutral
+532,1,4, Uday brings Shivangi here every day.,Vaibhav,24:31:00,1471,24:32:00,1472,Neutral,Neutral,Neutral
+533,1,4,I have brought a girl with me for the first time. ,Vaibhav,24:32:00,1472,24:34:00,1474,Neutral,Neutral,Surprise
+534,1,4, What?,Vartika,24:34:00,1474,24:35:00,1475,Neutral,Surprise,Fear
+535,1,4,I mean friend. Friend.,Vaibhav,24:35:00,1475,24:37:00,1477,Negative,Fear,Neutral
+536,1,4, Yes.,Vartika,24:37:00,1477,24:38:00,1478,Neutral,Neutral,Neutral
+537,1,4,You are needlessly worrying.,Vartika,24:39:00,1479,24:40:00,1480,Neutral,Neutral,Neutral
+538,1,4,Let me come in. ,Vartika,24:40:00,1480,24:41:00,1481,Neutral,Neutral,Fear
+539,1,4,No! No! No! No!Don't come in. ,Vaibhav,24:41:00,1481,24:42:00,1482,Negative,Fear,Neutral
+540,1,4,Two minutes. Please.,Vaibhav,24:42:00,1482,24:43:00,1483,Negative,Fear,Neutral
+541,1,4,I have seen dirtier rooms.,Vartika,24:43:00,1483,24:45:00,1485,Neutral,Neutral,Neutral
+542,1,4,"You shower every day, right? ",Vartika,24:45:00,1485,25:46:00,1546,Neutral,Neutral,Fear
+543,1,4,That will suffice.,Vartika,24:46:00,1486,24:47:00,1487,Neutral,Neutral,Fear
+544,1,4,Ta-dah! ,Vaibhav,24:51:00,1491,24:52:00,1492,Positive,Joy,Neutral
+545,1,4,Please.,Vaibhav,24:54:00,1494,24:55:00,1495,Neutral,Neutral,Neutral
+546,1,4,Yes.,Vaibhav,25:53:00,1553,25:54:00,1554,Neutral,Neutral,Neutral
+547,1,4," So, we shall study gravitation today.",Vaibhav,25:54:00,1554,25:56:00,1556,Neutral,Neutral,Neutral
+548,1,4,Gravitation. ,Vaibhav,25:59:00,1559,26:00:00,1560,Positive,Joy,Neutral
+549,1,4,Gravitation is such a nice thing.,Vaibhav,26:02:00,1562,26:04:00,1564,Positive,Joy,Neutral
+550,1,4,Gravitation has a beautiful fragrance.,Vaibhav,26:06:00,1566,26:08:00,1568,Positive,Joy,Neutral
+551,1,4,The attraction of two unknown bodies for each other.,Vaibhav,26:10:00,1570,26:12:00,1572,Positive,Joy,Neutral
+552,1,4,Living their lives around each other. ,Vaibhav,26:14:00,1574,26:16:00,1576,Positive,Joy,Neutral
+553,1,4, Round and round. ,Vaibhav,26:18:00,1578,26:19:00,1579,Positive,Joy,Neutral
+554,1,4,Round and round.,Vaibhav,26:19:00,1579,26:20:00,1580,Positive,Joy,Neutral
+555,1,4,Round and round.,Vaibhav,26:20:00,1580,26:21:00,1581,Positive,Joy,Neutral
+556,1,4, Vaibhav. ,Vartika,26:21:00,1581,26:22:00,1582,Neutral,Neutral,Neutral
+557,1,4,Can we ditch gravitation?,Vartika,26:23:00,1583,26:25:00,1585,Neutral,Neutral,Surprise
+558,1,4,Why? ,Vaibhav,26:25:00,1585,26:26:00,1586,Neutral,Surprise,Neutral
+559,1,4,I am very weak with SHM. ,Vartika,26:26:00,1586,26:28:00,1588,Neutral,Neutral,Neutral
+560,1,4,"So, can we do that first? ",Vartika,26:28:00,1588,26:29:00,1589,Neutral,Neutral,Fear
+561,1,4,"Yes, yes.",Vaibhav,26:30:00,1590,26:31:00,1591,Negative,Fear,Neutral
+562,1,4,I know it.,Vaibhav,26:31:00,1591,26:32:00,1592,Negative,Fear,Neutral
+563,1,4, Why wouldn't I know SHM?,Vaibhav,26:32:00,1592,26:33:00,1593,Negative,Fear,Neutral
+564,1,4,SHM is very easy. - ,Vaibhav,26:33:00,1593,26:34:00,1594,Negative,Fear,Neutral
+565,1,4,I know it. ,Vaibhav,26:34:00,1594,26:35:00,1595,Negative,Fear,Surprise
+566,1,4,But when did I say you don't know SHM?,Vartika,26:35:00,1595,26:39:00,1599,Neutral,Surprise,Fear
+567,1,4,Exactly. Exactly. ,Vaibhav,26:39:00,1599,26:40:00,1600,Negative,Fear,Neutral
+568,1,4,You didn't say that. ,Vaibhav,26:40:00,1600,26:41:00,1601,Negative,Fear,Neutral
+569,1,4,You didn't say that.,Vaibhav,26:41:00,1601,26:42:00,1602,Negative,Fear,Neutral
+570,1,4, SHM.,Vaibhav,26:44:00,1604,26:45:00,1605,Negative,Fear,Neutral
+571,1,4,"Oh, crap! ",Vaibhav,26:49:00,1609,26:50:00,1610,Neutral,Neutral,Neutral
+572,1,4,"Oh, no!",Vaibhav,26:50:00,1610,26:51:00,1611,Neutral,Neutral,Neutral
+573,1,4, It's time for my exercise. ,Vaibhav,26:51:00,1611,26:53:00,1613,Neutral,Neutral,Neutral
+574,1,4,"Oh, crap! Crap!",Vaibhav,26:53:00,1613,26:54:00,1614,Neutral,Neutral,Surprise(confused)
+575,1,4,I don't care what you were doing. ,Shivangi,27:08:00,1628,27:10:00,1630,Negative,Anger,Neutral
+576,1,4,How could you not answer my call?,Shivangi,27:10:00,1630,27:12:00,1632,Negative,Anger,Neutral
+577,1,4," Firstly, you don't study.",Shivangi,27:12:00,1632,27:13:00,1633,Negative,Anger,Neutral
+578,1,4, You just wander off anywhere.,Shivangi,27:13:00,1633,27:15:00,1635,Negative,Anger,Neutral
+579,1,4,"Baby, don't yell .",Uday,27:14:00,1634,27:15:00,1635,Neutral,Neutral,Anger
+580,1,4, Someone will hear you. ,Uday,27:15:00,1635,27:16:00,1636,Neutral,Neutral,Neutral
+581,1,4,Why shouldn't I yell?,Shivangi,27:15:00,1635,27:16:00,1636,Negative,Anger,Neutral
+582,1,4,Why shouldn't I yell?,Shivangi,27:16:00,1636,27:17:00,1637,Negative,Anger,Neutral
+583,1,4,Because I will mend my ways.,Uday,27:17:00,1637,27:19:00,1639,Neutral,Neutral,Anger
+584,1,4, I will change.,Uday,27:19:00,1639,27:20:00,1640,Neutral,Neutral,Anger
+585,1,4,I will study too. ,Uday,27:20:00,1640,27:21:00,1641,Neutral,Neutral,Anger
+586,1,4,"In fact, I am studying.",Uday,27:21:00,1641,27:22:00,1642,Neutral,Neutral,Anger
+587,1,4,Force. Vector. Equilibrium. Irrational. Compound. Complex.,Uday,27:22:00,1642,27:26:00,1646,Neutral,Neutral,Anger
+588,1,4,Hello. ,Uday,27:30:00,1650,27:31:00,1651,Negative,Fear,Neutral
+589,1,4,". Bro, you know I'm out with Shivangi, don't you?",Uday,27:31:00,1651,27:34:00,1654,Negative,Fear,Neutral
+590,1,4,Then why are you calling me now? ,Uday,27:34:00,1654,27:35:00,1655,Negative,Fear,Neutral
+591,1,4,You spoiled a romantic moment.,Uday,27:35:00,1655,27:37:00,1657,Negative,Fear,Neutral
+592,1,4,"I'm sorry, buddy.",Vaibhav,27:38:00,1658,27:39:00,1659,Neutral,Neutral,Neutral
+593,1,4, Vartika has come. ,Vaibhav,27:39:00,1659,27:41:00,1661,Positive,Joy,Neutral
+594,1,4, Oh!,Uday,27:41:00,1661,27:42:00,1662,Neutral,Neutral,Neutral
+595,1,4," protection is kept in H.C.Verma, part 2, the semi-conductors.",,27:42:00,1662,27:45:00,1665,Neutral,Neutral,Neutral
+596,1,4,What are you saying?,Vaibhav,27:45:00,1665,27:46:00,1666,Negative,Anger,Neutral
+597,1,4, I want the login password for Unacademy.,Vaibhav,27:46:00,1666,27:49:00,1669,Negative,Anger,Neutral
+598,1,4,"You won't be able to do it, boy.'",Uday,27:51:00,1671,27:53:00,1673,Neutral,Neutral,Neutral
+599,1,4,I don't want to do it either. ,Vaibhav,27:53:00,1673,27:54:00,1674,Neutral,Neutral,Neutral
+600,1,4,"  We are just friends, okay.",Vaibhav,27:54:00,1674,27:56:00,1676,Neutral,Neutral,Neutral
+601,1,4,Its the password. ,Uday,27:56:00,1676,27:57:00,1677,Neutral,Neutral,Neutral
+602,1,4,All small.,Uday,27:57:00,1677,27:58:00,1678,Neutral,Neutral,Neutral
+603,1,4,He's a true IITian. ,Uday,28:04:00,1684,28:05:00,1685,Neutral,Neutral,Neutral
+604,1,4,Why?,Shivangi,28:05:00,1685,28:06:00,1686,Neutral,Neutral,Neutral
+605,1,4, He'll die a virgin.,Uday,28:07:00,1687,28:09:00,1689,Neutral,Neutral,Neutral
+606,1,4,"My dear students, let's have a look at the spring block system today. ",Online teacher,28:20:00,1700,28:23:00,1703,Neutral,Neutral,Neutral
+607,1,4,This is the block. ,Online teacher,28:23:00,1703,28:24:00,1704,Neutral,Neutral,Neutral
+608,1,4,This is the spring.,Online teacher,28:24:00,1704,28:25:00,1705,Neutral,Neutral,Neutral
+609,1,4,If I elongate the spring by..,Online teacher,28:25:00,1705,28:27:00,1707,Neutral,Neutral,Neutral
+610,1,4,Vaibhav! ,Vartika,28:26:00,1706,28:27:00,1707,Neutral,Neutral,Fear
+611,1,4,"Yes, I'm coming.",Vaibhav,28:27:00,1707,28:28:00,1708,Negative,Fear,Neutral
+612,1,4,Last two. ,Vaibhav,28:28:00,1708,28:29:00,1709,Negative,Fear,Neutral
+613,1,4,Breathe in. ,Vaibhav,28:29:00,1709,28:30:00,1710,Neutral,Neutral,Neutral
+614,1,4,Breathe out.,Vaibhav,28:30:00,1710,28:31:00,1711,Neutral,Neutral,Neutral
+615,1,4,This is very useful at the last minute. ,Vaibhav,28:34:00,1714,28:35:00,1715,Positive,Joy,Neutral
+616,1,4,"Thank you, bro.",Vaibhav,28:36:00,1716,28:37:00,1717,Positive,Joy,Neutral
+617,1,4,We did it all. ,Vartika,28:41:00,1721,28:42:00,1722,Positive,Joy,Neutral
+618,1,4,The exam is tomorrow and I am not afraid.,Vartika,28:42:00,1722,28:44:00,1724,Positive,Joy,Neutral
+619,1,4," I mean, not that much.",Vartika,28:44:00,1724,28:46:00,1726,Neutral,Neutral,Neutral
+620,1,4,I just have to read the doomsday notes and I'm done.,Vartika,28:46:00,1726,28:48:00,1728,Neutral,Neutral,Surprise
+621,1,4, What notes?,Vaibhav,28:48:00,1728,28:49:00,1729,Neutral,Surprise,Neutral
+622,1,4,Doomsday. ,Vartika,28:49:00,1729,28:50:00,1730,Neutral,Neutral,Neutral
+623,1,4, Hold on.,Vartika,28:50:00,1730,28:51:00,1731,Neutral,Neutral,Neutral
+624,1,4,These.,Vartika,28:52:00,1732,28:53:00,1733,Neutral,Neutral,Neutral
+625,1,4, For last minute revision. ,Vartika,28:53:00,1733,28:55:00,1735,Neutral,Neutral,Neutral
+626,1,4,It contains the overview of each chapter. ,Vartika,28:55:00,1735,28:57:00,1737,Neutral,Neutral,Neutral
+627,1,4,Oh! I too have made this.,Vaibhav,28:57:00,1737,28:58:00,1738,Neutral,Neutral,Neutral
+628,1,4,Wait.  I'll show you.,Vaibhav,28:58:00,1738,28:59:00,1739,Neutral,Neutral,Neutral
+629,1,4,All the topics and time.   ,Vaibhav,29:01:00,1741,29:03:00,1743,Neutral,Neutral,Neutral
+630,1,4,You can watch it on the Unacademy app from and to any chapter.,Vaibhav,29:04:00,1744,29:06:00,1746,Neutral,Neutral,Surprise
+631,1,4,Don't you lose data if you check it all the time?,Vartika,29:06:00,1746,29:09:00,1749,Neutral,Surprise,Neutral
+632,1,4,No.,Vaibhav,29:09:00,1749,29:10:00,1750,Neutral,Neutral,Neutral
+633,1,4,I download it offline.,Vaibhav,29:10:00,1750,29:12:00,1752,Neutral,Neutral,Neutral
+634,1,4,"Oh, I see. ",Vartika,29:12:00,1752,29:13:00,1753,Neutral,Neutral,Neutral
+635,1,4, You've filled up such a big register. Seriously?,Vaibhav,29:13:00,1753,29:15:00,1755,Neutral,Surprise,Joy
+637,1,4,Yes.,Vartika,29:15:00,1755,29:16:00,1756,Positive,Joy,Surprise
+638,1,4,Why are you so tense for Maheshwari's entrance test?,Vaibhav,29:18:00,1758,29:20:00,1760,Neutral,Surprise,Neutral
+639,1,4,Because it is tough. ,Vartika,29:20:00,1760,29:22:00,1762,Neutral,Neutral,Neutral
+640,1,4,"Yes, that it is, but we have covered everything.",Vaibhav,29:22:00,1762,29:25:00,1765,Neutral,Neutral,Fear
+641,1,4,What's the matter? ,Vaibhav,29:27:00,1767,29:28:00,1768,Neutral,Neutral,Fear
+642,1,4,Actually,Vartika,29:29:00,1769,29:30:00,1770,Negative,Anger,Neutral
+643,1,4,my brother was in Maheshwari's top batch. ,Vartika,29:32:00,1772,29:34:00,1774,Neutral,Neutral,Surprise
+644,1,4, Oh!,Vaibhav,29:34:00,1774,29:35:00,1775,Neutral,Surprise,Neutral
+645,1,4," So, I felt at least if I make it to Maheshwari..",Vartika,29:35:00,1775,29:37:00,1777,Neutral,Neutral,Neutral
+646,1,4,..I will gain confidence that I can get to IIT.. ,Vartika,29:38:00,1778,29:41:00,1781,Neutral,Neutral,Neutral
+647,1,4,..but I did not feel I had any chance.,Vartika,29:41:00,1781,29:44:00,1784,Negative,Sadness,Neutral
+648,1,4,You know I've learned more in these 4 days than I did through the year.,Vartika,29:44:00,1784,29:48:00,1788,Positive,Joy,Neutral
+649,1,4,I had starting feeling like an idiot.,Vartika,29:50:00,1790,29:52:00,1792,Neutral,Neutral,Neutral
+650,1,4,Thanks for restoring my confidence.,Vartika,29:53:00,1793,29:55:00,1795,Positive,Joy,Neutral
+651,1,4,Why didn't you come to Kota earlier? ,Vartika,29:56:00,1796,29:58:00,1798,Neutral,Neutral,Neutral
+652,1,4,We would've become friends earlier.,Vartika,29:58:00,1798,29:59:00,1799,Neutral,Neutral,Neutral
+653,1,4,Yes.,Vaibhav,30:01:00,1801,30:02:00,1802,Neutral,Neutral,Neutral
+654,1,4,What can I say? ,Vaibhav,30:04:00,1804,30:05:00,1805,Neutral,Neutral,Neutral
+655,1,4,"It's okay if you don't tell us, but make sure you tell her.",Uday,30:07:00,1807,30:10:00,1810,Neutral,Neutral,Neutral
+656,1,4,"Once the exam gets over tomorrow, Lord knows when you'll see her again. ",Uday,30:10:00,1810,30:13:00,1813,Neutral,Neutral,Neutral
+657,1,4,"The mood is set, bro. ",Uday,30:13:00,1813,30:15:00,1815,Neutral,Neutral,Neutral
+658,1,4,Propose to her.,Uday,30:15:00,1815,30:16:00,1816,Neutral,Neutral,Neutral
+659,1,4,Listen.,Uday,30:18:00,1818,30:19:00,1819,Neutral,Neutral,Neutral
+660,1,4," Tomorrow is an auspicious day, right? ",Uday,30:19:00,1819,30:20:00,1820,Neutral,Neutral,Neutral
+661,1,4,Take this. ,Uday,30:20:00,1820,30:21:00,1821,Neutral,Neutral,Neutral
+662,1,4,Go in style.,Uday,30:21:00,1821,30:22:00,1822,Neutral,Neutral,Neutral
+663,1,4,"Bhaiya, you have yogurt?   ",Vaibhav,30:56:00,1856,30:57:00,1857,Neutral,Neutral,Neutral
+664,1,4,"  Yes, you can have yogurt. ",Shopkeeper,30:57:00,1857,30:58:00,1858,Neutral,Neutral,Neutral
+665,1,4,Take it from there.,Shopkeeper,30:58:00,1858,30:59:00,1859,Neutral,Neutral,Neutral
+666,1,4,And... Sugar?,Vaibhav,31:00:00,1860,31:01:00,1861,Neutral,Neutral,Neutral
+667,1,4,We have sugar too.,Shopkeeper,31:01:00,1861,31:02:00,1862,Neutral,Neutral,Neutral
+668,1,4,"There you go, bhaiya.",Shopkeeper,31:02:00,1862,31:03:00,1863,Neutral,Neutral,Neutral
+669,1,4,How much?,Vaibhav,31:05:00,1865,31:06:00,1866,Neutral,Neutral,Neutral
+670,1,4," Thirty rupees, bhaiya. 30.",Shopkeeper,31:06:00,1866,31:07:00,1867,Neutral,Neutral,Neutral
+671,1,4,Thank you.,Shopkeeper,31:11:00,1871,31:12:00,1872,Neutral,Neutral,Neutral
+672,1,4,What is this? ,Vartika,31:28:00,1888,31:29:00,1889,Neutral,Neutral,Neutral
+673,1,4,Today is an auspicious day. ,Vaibhav,31:30:00,1890,31:31:00,1891,Neutral,Neutral,Neutral
+674,1,4," So, this is auspicious. ",Vaibhav,31:32:00,1892,31:33:00,1893,Neutral,Neutral,Neutral
+675,1,4,"Oh, okay.",Vartika,31:34:00,1894,31:35:00,1895,Neutral,Neutral,Neutral
+676,1,4,If you eat yogurt your nervousness will disappear. ,Vaibhav,31:35:00,1895,31:37:00,1897,Neutral,Neutral,Neutral
+677,1,4,You eat it too. ,Vartika,31:38:00,1898,31:39:00,1899,Neutral,Neutral,Neutral
+678,1,4,You too are sitting for the exam.,Vartika,31:39:00,1899,31:41:00,1901,Neutral,Neutral,Surprise
+679,1,4,"Yes, oh! ", Vaibhav,31:42:00,1902,31:43:00,1903,Neutral,Surprise,Neutral
+680,1,4, I too am sitting for the exam., Vaibhav,31:43:00,1903,31:44:00,1904,Neutral,Neutral,Neutral
+681,1,4,What do we do with this now? , Vaibhav,31:50:00,1910,31:51:00,1911,Neutral,Neutral,Neutral
+682,1,4,I don't know.,Vartika,31:51:00,1911,31:52:00,1912,Neutral,Neutral,Neutral
+683,1,4, Let's apply it on our hair., Vaibhav,31:53:00,1913,31:54:00,1914,Neutral,Neutral,Neutral
+684,1,4,It will make the hair lustrous., Vaibhav,31:54:00,1914,31:54:00,1914,Neutral,Neutral,Disgust
+685,1,4,Gross!,Vartika,31:55:00,1915,31:56:00,1916,Negative,Disgust,Neutral
+686,1,4,I'm joking.,Vaibhav,31:56:00,1916,31:56:00,1916,Neutral,Neutral,Neutral
+687,1,4,"Didn't I tell you, I'm not that boring? ",Vaibhav,31:56:00,1916,31:58:00,1918,Neutral,Neutral,Neutral
+688,1,4,Yeah.,Vartika,31:58:00,1918,31:59:00,1919,Neutral,Neutral,Neutral
+689,1,4,Let's finish it. ,Vaibhav,31:59:00,1919,32:00:00,1920,Neutral,Neutral,Neutral
+690,1,4,Yeah.,Vartika,32:00:00,1920,32:01:00,1921,Neutral,Neutral,Neutral
+691,1,4, Not IIT. ,Meenal,33:57:00,2037,33:58:00,2038,Neutral,Neutral,Neutral
+692,1,4,I will sit for the SATs.,Meenal,33:58:00,2038,34:00:00,2040,Neutral,Neutral,Neutral
+693,1,4,I want to go to US.,Meenal,34:00:00,2040,34:02:00,2042,Neutral,Neutral,Neutral
+694,1,4,"Cornell, Yale, Harvard, Columbia.",Meenal,34:02:00,2042,34:05:00,2045,Neutral,Neutral,Surprise
+695,1,4, One of these. ,Meenal,34:05:00,2045,34:07:00,2047,Neutral,Neutral,Surprise
+696,1,4, What?,Meena,34:07:00,2047,34:08:00,2048,Neutral,Surprise,Neutral
+697,1,4,My uncle is over there. ,Meenal,34:09:00,2049,34:10:00,2050,Neutral,Neutral,Neutral
+698,1,4,He told me to come. ,Meenal,34:10:00,2050,34:11:00,2051,Neutral,Neutral,Neutral
+699,1,4,Then why are you working so hard over here?,Meena,34:14:00,2054,34:16:00,2056,Negative,Sadness,Neutral
+700,1,4,For knowledge.,Meenal,34:16:00,2056,34:17:00,2057,Neutral,Neutral,Sadness
+701,1,4,Knowledge doesn't get wasted.,Meenal,34:17:00,2057,34:19:00,2059,Neutral,Neutral,Sadness
+702,1,4,"Uday, take me with you.",Meena,34:23:00,2063,34:25:00,2065,Negative,Sadness,Surprise
+703,1,4,Nobody in this world stays put in one place. ,Meena,34:26:00,2066,34:28:00,2068,Negative,Sadness,Surprise
+704,1,4,What's the matter?,Meenal,34:28:00,2068,34:29:00,2069,Neutral,Surprise,Neutral
+705,1,4,I'm already eager for the results.,Vartika,35:35:00,2135,35:37:00,2137,Neutral,Neutral,Neutral
+706,1,4, Yes.  ,Vaibhav,35:38:00,2138,35:39:00,2139,Neutral,Neutral,Neutral
+707,1,4,It will take two weeks though.,Vaibhav,35:39:00,2139,35:40:00,2140,Neutral,Neutral,Neutral
+708,1,4,Yes.,Vartika,35:40:00,2140,35:41:00,2141,Neutral,Neutral,Neutral
+709,1,4,"Okay, then.",Vartika,35:53:00,2153,35:53:00,2153,Neutral,Neutral,Neutral
+710,1,4, Bye. ,Vartika,35:54:00,2154,35:55:00,2155,Neutral,Neutral,Sadness
+711,1,4,Bye,Vaibhav,35:56:00,2156,35:57:00,2157,Negative,Sadness,Neutral
+712,1,4,See you.,Vaibhav,35:58:00,2158,35:59:00,2159,Negative,Sadness,Neutral
+713,1,4,Vartika.,Vaibhav,36:02:00,2162,36:03:00,2163,Neutral,Neutral,Neutral
+714,1,4,Yes.,Vartika,36:03:00,2163,36:04:00,2164,Neutral,Neutral,Neutral
+715,1,4,Yes.,Vartika,36:07:00,2167,36:08:00,2168,Neutral,Neutral,Fear
+716,1,4," Vartika you... you will go to bed early, won't you?",Vaibhav,36:11:00,2171,36:14:00,2174,Negative,Fear,Surprise
+717,1,4,Peacefully.,Vaibhav,36:17:00,2177,36:18:00,2178,Neutral,Neutral,Neutral
+718,1,4, Yes.,Vartika,36:18:00,2178,36:19:00,2179,Neutral,Neutral,Neutral
+719,1,4, You too.,Vartika,36:19:00,2179,36:20:00,2180,Neutral,Neutral,Neutral
+720,1,4, Yes.Me too.,Vaibhav,36:21:00,2181,36:22:00,2182,Neutral,Neutral,Neutral
+721,1,4,"Okay, then. ",Vartika,36:24:00,2184,36:25:00,2185,Neutral,Neutral,Neutral
+722,1,4, Goodnight.,Vartika,36:26:00,2186,36:27:00,2187,Neutral,Neutral,Neutral
+723,1,4,Goodnight. ,Vaibhav,36:27:00,2187,36:28:00,2188,Neutral,Neutral,Neutral
+724,1,4,Stay in touch.,Vaibhav,36:28:00,2188,36:29:00,2189,Neutral,Neutral,Neutral
+725,1,4,Yes.,Vartika,36:29:00,2189,36:30:00,2190,Neutral,Neutral,Neutral
+726,1,4,Crap! ,Vaibhav,36:30:00,2190,36:32:00,2192,Negative,Sadness,Neutral
+727,1,4,Vaibhav! ,Vartika,36:34:00,2194,36:35:00,2195,Neutral,Neutral,Neutral
+728,1,4,Vartika.,Vaibhav,36:35:00,2195,36:36:00,2196,Neutral,Neutral,Neutral
+729,1,4,Can we begin the syllabus for the 12th? ,Vartika,36:37:00,2197,36:40:00,2200,Neutral,Neutral,Neutral
+730,1,4,"Yes, we could do that. ",Vaibhav,36:41:00,2201,36:42:00,2202,Neutral,Neutral,Neutral
+731,1,4,Tomorrow.,Vartika,36:42:00,2202,36:43:00,2203,Neutral,Neutral,Neutral
+732,1,4,Tomorrow.,Vaibhav,36:43:00,2203,36:43:00,2203,Neutral,Neutral,Neutral
+733,1,4,Cool.Goodnight. ,Vartika,36:44:00,2204,36:45:00,2205,Neutral,Neutral,Neutral
+734,1,4, Goodnight. ,Vaibhav,36:45:00,2205,36:46:00,2206,Neutral,Neutral,Neutral
+735,1,4,Bye.,Vaibhav,36:48:00,2208,36:49:00,2209,Neutral,Neutral,Neutral
+736,1,4,The seven wonders that are made in Kota are less.,Uday,38:00:00,2280,38:03:00,2283,Positive,Joy,Neutral
+737,1,4,"You are the eighth wonder, my love.",Uday,38:05:00,2285,38:07:00,2287,Positive,Joy,Neutral
+738,1,4,Bye.,Uday,38:09:00,2289,38:10:00,2290,Positive,Joy,Neutral
+739,1,4,Love you. Miss you. Take care.,Uday,38:10:00,2290,38:12:00,2292,Positive,Joy,Neutral
+740,1,4,This will last another six months.,Uday,38:18:00,2298,38:20:00,2300,Positive,Joy,Neutral
+741,1,4,"Buddy, I should have studied.",Meena,38:22:00,2302,38:25:00,2305,Negative,Sadness,Neutral
+742,1,4,A lot of time was wasted because I wanted to relax.,Meena,38:26:00,2306,38:28:00,2308,Negative,Sadness,Neutral
+743,1,4,"Even studies can be very relaxing, bro. ",Vaibhav,38:32:00,2312,38:34:00,2314,Positive,Joy,Neutral
+744,1,4,You just need the right partner.,Vaibhav,38:36:00,2316,38:38:00,2318,Positive,Joy,Neutral
