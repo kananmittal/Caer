@@ -53,5 +53,6 @@ class AudioEmotionDataset(Dataset):
             "input_values": waveform,
             "categorical_label": torch.tensor(self.categorical_labels[idx], dtype=torch.long),
             "valence": torch.tensor(self.valence_labels[idx], dtype=torch.float),
-            "arousal": torch.tensor(self.arousal_labels[idx], dtype=torch.float)
+            "arousal": torch.tensor(self.arousal_labels[idx], dtype=torch.float),
+            "file_path": path
         }

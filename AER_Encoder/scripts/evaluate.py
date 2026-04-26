@@ -1,21 +1,39 @@
 import torch
 import sys
-from pathlib import Path
+import json
+import matplotlib.pyplot as plt
+import seaborn as sns
 import pandas as pd
+from pathlib import Path
 from torch.utils.data import DataLoader
+from sklearn.metrics import recall_score, precision_score, f1_score, confusion_matrix
 
 sys.path.append(str(Path(__file__).resolve().parent.parent))
 from src.config.config import config
 from src.models.affective_encoder import AffectiveEncoder
-from src.data.dataset import AudioEmotionDataset, collate_fn
+from src.data.dataset import AudioEmotionDataset
 from tqdm import tqdm
+
+EMOTION_MAP = {
+    0: "Neutral",
+    1: "Happy",
+    2: "Sad",
+    3: "Angry",
+    4: "Fear",
+    5: "Surprise",
+    6: "Disgust"
+}
 
 def evaluate(model, dataloader, device):
     model.eval()
-    correct_categorical = 0
-    total_samples = 0
+    
+    all_preds = []
+    all_true = []
     val_error = 0
     arousal_error = 0
+    total_samples = 0
+    
+    json_results = []
     
     with torch.no_grad():
         for batch in tqdm(dataloader, desc="Evaluating"):
@@ -23,32 +41,74 @@ def evaluate(model, dataloader, device):
             cat_labels = batch["categorical_label"].to(device)
             valence_labels = batch["valence"].to(device)
             arousal_labels = batch["arousal"].to(device)
+            file_paths = batch["file_path"] # Automatically aggregated into a tuple by PyTorch default_collate
             
             outputs = model(input_values)
-            
-            # Accuracy computation for Categorical Label
             preds = torch.argmax(outputs["categorical_logits"], dim=1)
-            correct_categorical += (preds == cat_labels).sum().item()
-            total_samples += cat_labels.size(0)
             
-            # Mean Absolute Error for Dimensional
+            all_preds.extend(preds.cpu().numpy())
+            all_true.extend(cat_labels.cpu().numpy())
+            
             val_error += torch.abs(outputs["valence"] - valence_labels).sum().item()
             arousal_error += torch.abs(outputs["arousal"] - arousal_labels).sum().item()
+            total_samples += cat_labels.size(0)
             
-    accuracy = correct_categorical / total_samples if total_samples > 0 else 0
+            # Map predictions for JSON output
+            pred_list = preds.cpu().numpy()
+            true_list = cat_labels.cpu().numpy()
+            for i in range(len(file_paths)):
+                json_results.append({
+                    "file_path": file_paths[i],
+                    "true_emotion": EMOTION_MAP.get(true_list[i], "Unknown"),
+                    "predicted_emotion": EMOTION_MAP.get(pred_list[i], "Unknown")
+                })
+                
+    # Core Scikit-Learn Metrics calculation
+    accuracy = (torch.tensor(all_preds) == torch.tensor(all_true)).float().mean().item()
+    uar = recall_score(all_true, all_preds, average='macro', zero_division=0)
+    precision = precision_score(all_true, all_preds, average='macro', zero_division=0)
+    f1 = f1_score(all_true, all_preds, average='macro', zero_division=0)
+    
     mae_val = val_error / total_samples if total_samples > 0 else 0
     mae_ar = arousal_error / total_samples if total_samples > 0 else 0
     
-    print(f"Evaluation Complete!")
-    print(f"Categorical Accuracy: {accuracy * 100:.2f}%")
-    print(f"Valence MAE: {mae_val:.4f}")
-    print(f"Arousal MAE: {mae_ar:.4f}")
+    print("\n" + "="*40)
+    print("🎯 EVALUATION METRICS REPORT")
+    print("="*40)
+    print(f"Categorical Accuracy : {accuracy * 100:.2f}%")
+    print(f"UAR (Avg Recall)     : {uar * 100:.2f}%")
+    print(f"Macro Precision      : {precision * 100:.2f}%")
+    print(f"Macro F1-Score       : {f1 * 100:.2f}%")
+    print("-" * 40)
+    print(f"Valence MAE          : {mae_val:.4f}")
+    print(f"Arousal MAE          : {mae_ar:.4f}")
+    print("="*40 + "\n")
     
-    return accuracy, mae_val, mae_ar
+    # 1. Save JSON Report
+    json_path = config.processed_dir / "evaluation_results.json"
+    with open(json_path, 'w') as f:
+        json.dump(json_results, f, indent=4)
+    print(f"✅ Saved individual JSON predictions to {json_path}")
+    
+    # 2. Generate Confusion Matrix Heatmap
+    cm = confusion_matrix(all_true, all_preds)
+    plt.figure(figsize=(10, 8))
+    sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', 
+                xticklabels=[EMOTION_MAP[i] for i in range(7)],
+                yticklabels=[EMOTION_MAP[i] for i in range(7)])
+    plt.ylabel('Actual Emotion (Ground Truth)', fontsize=12)
+    plt.xlabel('Predicted Emotion', fontsize=12)
+    plt.title('AER Model Emotion Confusion Matrix (10% Test Split)', fontsize=14, pad=15)
+    plt.tight_layout()
+    
+    cm_path = config.processed_dir / "confusion_matrix.png"
+    plt.savefig(cm_path, dpi=300)
+    plt.close()
+    print(f"✅ Generated Confusion Matrix heatmap at {cm_path}")
 
-if __name__ == "__main__":
+def main():
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    print(f"Starting Evaluation Pipeline on {device}...")
+    print(f"Starting Advanced Evaluation Pipeline on {device}...")
     
     # 1. Load Model Architecture & Weights
     model = AffectiveEncoder(config)
@@ -75,15 +135,22 @@ if __name__ == "__main__":
     test_df = df.sample(frac=sample_fraction, random_state=42).reset_index(drop=True)
     print(f"Randomly sampled {len(test_df)} audio files ({sample_fraction*100}% of total dataset) for testing.")
     
-    # 4. Initialize DataLoader
-    test_dataset = AudioEmotionDataset(test_df, config)
+    # 4. Initialize DataLoader (removed collate_fn to allow default PyTorch batching for string file_paths)
+    test_dataset = AudioEmotionDataset(
+        file_paths=test_df['file_path'].values,
+        categorical_labels=test_df['label_idx'].values,
+        valence_labels=test_df['valence'].values,
+        arousal_labels=test_df['arousal'].values
+    )
     test_loader = DataLoader(
         test_dataset, 
         batch_size=config.batch_size * 2, # Can double batch size during eval since no gradients
         shuffle=False, 
-        collate_fn=collate_fn,
         num_workers=4
     )
     
     # 5. Execute
     evaluate(model, test_loader, device)
+
+if __name__ == "__main__":
+    main()
