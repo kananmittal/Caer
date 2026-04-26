@@ -122,20 +122,16 @@ def main():
     model.load_state_dict(torch.load(model_weight_path, map_location=device))
     model.to(device)
     
-    # 2. Load Dataset Manifest
-    manifest_path = config.processed_dir / "train_manifest.csv"
+    # 2. Load the Blind Test Manifest
+    manifest_path = config.processed_dir / "test_manifest.csv"
     if not manifest_path.exists():
-        print(f"Error: Manifest not found at {manifest_path}")
+        print(f"Error: Manifest not found at {manifest_path}. Please re-run preprocess_datasets.py first.")
         sys.exit(1)
         
-    df = pd.read_csv(manifest_path)
+    test_df = pd.read_csv(manifest_path)
+    print(f"Successfully loaded {len(test_df)} unseen audio files for strict evaluation.")
     
-    # 3. Sample exactly 10% of the data for testing
-    sample_fraction = 0.10
-    test_df = df.sample(frac=sample_fraction, random_state=42).reset_index(drop=True)
-    print(f"Randomly sampled {len(test_df)} audio files ({sample_fraction*100}% of total dataset) for testing.")
-    
-    # 4. Initialize DataLoader (removed collate_fn to allow default PyTorch batching for string file_paths)
+    # 3. Initialize DataLoader
     test_dataset = AudioEmotionDataset(
         file_paths=test_df['file_path'].values,
         categorical_labels=test_df['label_idx'].values,

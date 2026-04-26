@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from pathlib import Path
 import sys
+from sklearn.model_selection import train_test_split
 
 # Ensure config loads
 sys.path.append(str(Path(__file__).resolve().parent.parent))
@@ -226,12 +227,22 @@ def main():
     df['valence'] = df.apply(lambda row: V_A_APPROXIMATION[row['label_idx']][0] if pd.isna(row.get('valence')) else row['valence'], axis=1)
     df['arousal'] = df.apply(lambda row: V_A_APPROXIMATION[row['label_idx']][1] if pd.isna(row.get('arousal')) else row['arousal'], axis=1)
     
-    # Save unified CSV
-    manifest_path = config.processed_dir / "train_manifest.csv"
-    df.to_csv(manifest_path, index=False)
-    print(f"-> Saved universal training manifest to {manifest_path}")
+    # Stratified 90/10 Split to prevent data leakage and guarantee valid evaluation
+    # Using stratify=df['emotion'] to ensure both Train and Test sets have the same proportion of emotion classes
+    train_df, test_df = train_test_split(df, test_size=0.10, random_state=42, stratify=df['emotion'])
     
-    # Generate Chart
+    print(f"Data Split Complete: {len(train_df)} Training Samples, {len(test_df)} Testing Samples.")
+    
+    # Save Split Manifests
+    train_manifest_path = config.processed_dir / "train_manifest.csv"
+    test_manifest_path = config.processed_dir / "test_manifest.csv"
+    
+    train_df.to_csv(train_manifest_path, index=False)
+    test_df.to_csv(test_manifest_path, index=False)
+    print(f"-> Saved universal training manifest to {train_manifest_path}")
+    print(f"-> Saved blind testing manifest to {test_manifest_path}")
+    
+    # Generate Chart (using full dataset for holistic visualization)
     chart_path = config.processed_dir / "class_distribution.png"
     generate_distribution_chart(df, chart_path)
     
