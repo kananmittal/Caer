@@ -85,7 +85,7 @@ def evaluate(model, dataloader, device):
     print("="*40 + "\n")
     
     # 1. Save JSON Report
-    json_path = config.processed_dir / "evaluation_results.json"
+    json_path = config.processed_dir / f"evaluation_results_{config.run_name}.json"
     with open(json_path, 'w') as f:
         json.dump(json_results, f, indent=4)
     print(f"✅ Saved individual JSON predictions to {json_path}")
@@ -98,10 +98,10 @@ def evaluate(model, dataloader, device):
                 yticklabels=[EMOTION_MAP[i] for i in range(7)])
     plt.ylabel('Actual Emotion (Ground Truth)', fontsize=12)
     plt.xlabel('Predicted Emotion', fontsize=12)
-    plt.title('AER Model Emotion Confusion Matrix (10% Test Split)', fontsize=14, pad=15)
+    plt.title(f'AER Confusion Matrix ({config.run_name.replace("_", " ").title()} Run)', fontsize=14, pad=15)
     plt.tight_layout()
     
-    cm_path = config.processed_dir / "confusion_matrix.png"
+    cm_path = config.processed_dir / f"confusion_matrix_{config.run_name}.png"
     plt.savefig(cm_path, dpi=300)
     plt.close()
     print(f"✅ Generated Confusion Matrix heatmap at {cm_path}")
@@ -112,7 +112,7 @@ def main():
     
     # 1. Load Model Architecture & Weights
     model = AffectiveEncoder(config)
-    model_weight_path = Path("aer_base_model_epoch_9.pt")
+    model_weight_path = config.base_dir / "AER_Encoder" / f"aer_{config.run_name}_epoch_9.pt"
     
     if not model_weight_path.exists():
         print(f"Error: Could not find trained weights at {model_weight_path}")
@@ -122,8 +122,8 @@ def main():
     model.load_state_dict(torch.load(model_weight_path, map_location=device))
     model.to(device)
     
-    # 2. Load the Blind Test Manifest
-    manifest_path = config.processed_dir / "test_manifest.csv"
+    # 2. Load the Blind Test Manifest with Versioning
+    manifest_path = config.processed_dir / f"test_manifest_{config.run_name}.csv"
     if not manifest_path.exists():
         print(f"Error: Manifest not found at {manifest_path}. Please re-run preprocess_datasets.py first.")
         sys.exit(1)

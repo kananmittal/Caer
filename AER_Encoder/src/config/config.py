@@ -3,6 +3,9 @@ from pathlib import Path
 
 @dataclasses.dataclass
 class AERConfig:
+    # Pipeline Versioning
+    run_name: str = "generic" # Switch to "cultural_mixed" to activate the new datasets
+    
     # Model parameters
     model_name: str = "facebook/wav2vec2-base"
     num_categorical_labels: int = 7 # 0: Neutral, 1: Happy, 2: Sad, 3: Angry, 4: Fear, 5: Surprise, 6: Disgust

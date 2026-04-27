@@ -238,7 +238,11 @@ def main():
     all_records.extend(parse_crema(base_raw_dir))
     all_records.extend(parse_savee(base_raw_dir))
     all_records.extend(parse_iemocap(base_raw_dir))
-    all_records.extend(parse_cultural(base_raw_dir))
+    
+    # Selective Loading: Only pull cultural data if the run_name specifies it
+    if config.run_name == "cultural_mixed":
+        print("-> Pulling Kota Factory Cultural Data...")
+        all_records.extend(parse_cultural(base_raw_dir))
     
     df = pd.DataFrame(all_records)
     
@@ -258,9 +262,9 @@ def main():
     
     print(f"Data Split Complete: {len(train_df)} Training Samples, {len(test_df)} Testing Samples.")
     
-    # Save Split Manifests
-    train_manifest_path = config.processed_dir / "train_manifest.csv"
-    test_manifest_path = config.processed_dir / "test_manifest.csv"
+    # Save Split Manifests with Versioning
+    train_manifest_path = config.processed_dir / f"train_manifest_{config.run_name}.csv"
+    test_manifest_path = config.processed_dir / f"test_manifest_{config.run_name}.csv"
     
     train_df.to_csv(train_manifest_path, index=False)
     test_df.to_csv(test_manifest_path, index=False)
@@ -268,7 +272,7 @@ def main():
     print(f"-> Saved blind testing manifest to {test_manifest_path}")
     
     # Generate Chart (using full dataset for holistic visualization)
-    chart_path = config.processed_dir / "class_distribution.png"
+    chart_path = config.processed_dir / f"class_distribution_{config.run_name}.png"
     generate_distribution_chart(df, chart_path)
     
     print("\nClass Breakdown summary:")
