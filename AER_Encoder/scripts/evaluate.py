@@ -112,7 +112,21 @@ def main():
     
     # 1. Load Model Architecture & Weights
     model = AffectiveEncoder(config)
-    model_weight_path = config.base_dir / f"aer_{config.run_name}_epoch_9.pt"
+    
+    # Automatically find the latest checkpoint
+    import glob
+    import os
+    checkpoint_pattern = str(config.base_dir / f"aer_{config.run_name}_epoch_*.pt")
+    checkpoints = glob.glob(checkpoint_pattern)
+    
+    if not checkpoints:
+        print(f"Error: No trained weights found matching {checkpoint_pattern}")
+        sys.exit(1)
+        
+    # Get the checkpoint with the highest epoch number
+    latest_checkpoint = max(checkpoints, key=lambda x: int(x.split('_epoch_')[-1].split('.pt')[0]))
+    model_weight_path = Path(latest_checkpoint)
+    print(f"-> Auto-detected latest checkpoint: {model_weight_path.name}")
     
     if not model_weight_path.exists():
         print(f"Error: Could not find trained weights at {model_weight_path}")
