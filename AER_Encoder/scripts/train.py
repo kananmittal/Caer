@@ -67,6 +67,28 @@ def main():
     model = AffectiveEncoder(config).to(device)
     optimizer = optim.AdamW(model.parameters(), lr=config.learning_rate)
     
+    # 0. Checkpoint Resumption Logic
+    import glob
+    start_epoch = 0
+    checkpoint_pattern = str(config.base_dir / f"aer_{config.run_name}_epoch_*.pt")
+    checkpoints = glob.glob(checkpoint_pattern)
+    
+    if checkpoints:
+        # Get the checkpoint with the highest epoch number
+        latest_checkpoint = max(checkpoints, key=lambda x: int(x.split('_epoch_')[-1].split('.pt')[0]))
+        latest_epoch = int(latest_checkpoint.split('_epoch_')[-1].split('.pt')[0])
+        
+        print(f"-> Found existing checkpoint: {Path(latest_checkpoint).name}")
+        print(f"-> Resuming training from Epoch {latest_epoch + 1}")
+        
+        # Load weights into model
+        model.load_state_dict(torch.load(latest_checkpoint, map_location=device))
+        start_epoch = latest_epoch + 1
+        
+    if start_epoch >= config.epochs:
+        print("Training already completed for the specified number of epochs!")
+        sys.exit(0)
+    
     # 1. Load Dataset Manifest with Versioning
     manifest_path = config.processed_dir / f"train_manifest_{config.run_name}.csv"
     if not manifest_path.exists():
@@ -88,7 +110,8 @@ def main():
     print(f"Successfully loaded {len(dataset)} samples. Ready for Phase 1 Base Model Training.")
     
     # Example execution looping structure (usually you run this on Ubuntu to prevent Mac thermal issues)
-    for epoch in range(config.epochs):
+    for epoch in range(start_epoch, config.epochs):
+        print(f"\n--- Starting Epoch {epoch + 1}/{config.epochs} ---")
         epoch_loss = train_epoch(model, dataloader, optimizer, device)
         print(f"Epoch {epoch+1} Completed. Avg Loss: {epoch_loss:.4f}")
         # Save model checkpoint with Versioning
