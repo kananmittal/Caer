@@ -112,7 +112,7 @@ def main():
     
     # 1. Load Model Architecture & Weights
     model = AffectiveEncoder(config)
-    model_weight_path = config.base_dir / "AER_Encoder" / f"aer_{config.run_name}_epoch_9.pt"
+    model_weight_path = config.base_dir / f"aer_{config.run_name}_epoch_9.pt"
     
     if not model_weight_path.exists():
         print(f"Error: Could not find trained weights at {model_weight_path}")

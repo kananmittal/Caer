@@ -92,7 +92,7 @@ def main():
         epoch_loss = train_epoch(model, dataloader, optimizer, device)
         print(f"Epoch {epoch+1} Completed. Avg Loss: {epoch_loss:.4f}")
         # Save model checkpoint with Versioning
-        checkpoint_path = config.base_dir / "AER_Encoder" / f"aer_{config.run_name}_epoch_{epoch}.pt"
+        checkpoint_path = config.base_dir / f"aer_{config.run_name}_epoch_{epoch}.pt"
         torch.save(model.state_dict(), checkpoint_path)
         print(f"-> Saved checkpoint: {checkpoint_path}")
 
