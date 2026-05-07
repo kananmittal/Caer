@@ -45,7 +45,11 @@ def run_aer_inference(model, target_audio):
         outputs = model(input_values)
         
     # Process outputs
-    pred_class_idx = torch.argmax(outputs["categorical_logits"], dim=1).item()
+    logits = outputs["categorical_logits"]
+    probabilities = torch.softmax(logits, dim=1)
+    
+    pred_class_idx = torch.argmax(logits, dim=1).item()
+    emotion_confidence = probabilities[0, pred_class_idx].item()
     emotion_label = EMOTION_MAP.get(pred_class_idx, "Unknown")
     
     valence_score = outputs["valence"].item()
@@ -58,6 +62,7 @@ def run_aer_inference(model, target_audio):
         "model": "AER_Encoder",
         "results": {
             "predicted_emotion": emotion_label,
+            "emotion_confidence": round(emotion_confidence, 4),
             "valence": round(valence_score, 4),
             "arousal": round(arousal_score, 4),
             "latent_vector_dimension": len(latent_vector),

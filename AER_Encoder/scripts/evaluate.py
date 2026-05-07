@@ -44,7 +44,10 @@ def evaluate(model, dataloader, device):
             file_paths = batch["file_path"] # Automatically aggregated into a tuple by PyTorch default_collate
             
             outputs = model(input_values)
-            preds = torch.argmax(outputs["categorical_logits"], dim=1)
+            logits = outputs["categorical_logits"]
+            preds = torch.argmax(logits, dim=1)
+            probs = torch.softmax(logits, dim=1)
+            confidences = probs[torch.arange(probs.size(0)), preds]
             
             all_preds.extend(preds.cpu().numpy())
             all_true.extend(cat_labels.cpu().numpy())
@@ -56,11 +59,13 @@ def evaluate(model, dataloader, device):
             # Map predictions for JSON output
             pred_list = preds.cpu().numpy()
             true_list = cat_labels.cpu().numpy()
+            conf_list = confidences.cpu().numpy()
             for i in range(len(file_paths)):
                 json_results.append({
                     "file_path": file_paths[i],
                     "true_emotion": EMOTION_MAP.get(true_list[i], "Unknown"),
-                    "predicted_emotion": EMOTION_MAP.get(pred_list[i], "Unknown")
+                    "predicted_emotion": EMOTION_MAP.get(pred_list[i], "Unknown"),
+                    "emotion_confidence": round(float(conf_list[i]), 4)
                 })
                 
     # Core Scikit-Learn Metrics calculation
